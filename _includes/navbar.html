@@ -1,12 +1,4 @@
-<!-- Navigation Bar -->
-<div
-  data-collapse="small"
-  data-animation="default"
-  data-duration="400"
-  data-easing="ease"
-  data-easing2="ease"
-  role="banner"
-  class="navbar w-nav">
+<header class="navbar">
   <div class="header-content">
     <div class="navbar-row">
       <div class="navbar-col">
@@ -15,57 +7,69 @@
           {% if page.url == '/' %}
           aria-current="page"
           {% endif %}
-          class="brand w-inline-block{% if page.url == '/' %} w--current{% endif %}">
+          class="brand{% if page.url == '/' %} current{% endif %}">
           <img
             src="{{ '/assets/images/icon-logo-b.svg' | relative_url }}"
-            alt=""
+            alt="Praktika Logo"
             class="logo-img">
         </a>
       </div>
-      <nav role="navigation" class="nav-menu w-nav-menu">
+      
+      <!-- Mobile Menu Toggle -->
+      <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+      <label for="mobile-menu-toggle" class="mobile-menu-button">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <!-- Close button inside the menu -->
+        <label for="mobile-menu-toggle" class="mobile-menu-close">
+          <span class="close-line"></span>
+          <span class="close-line"></span>
+        </label>
+        
         <div class="nav">
           <div class="nav-header">
             <div class="navbar-col">
-              <a href="{{ '/pl/' | relative_url }}" class="brand w-inline-block">
+              <a href="{{ '/pl/' | relative_url }}" class="brand">
                 <img
                   src="{{ '/assets/images/main-en_1.svg' | relative_url }}"
-                  alt=""
+                  alt="Praktika Main Logo"
                   class="logo-img">
               </a>
-            </div>
-            <div class="menu-button w-nav-button">
-              <div class="_0"></div>
             </div>
           </div>
           <div class="menu-row">
             <a
               href="https://www.instagram.com/practico.world/"
               target="_blank"
-              class="nav-link w-nav-link">Instagram</a>
+              rel="noopener"
+              class="nav-link">Instagram</a>
             <a
               href="https://www.facebook.com/practico.world/"
               target="_blank"
-              class="nav-link w-nav-link">Facebook</a>
-            <a href="mailto:hi@praktika.app?subject=Support%20request" class="nav-link w-nav-link">Email</a>
-            <a href="{{ '/support.html' | relative_url }}" class="nav-link w-nav-link">Get Help</a>
+              rel="noopener"
+              class="nav-link">Facebook</a>
+            <a href="mailto:hi@praktika.app?subject=Support%20request" class="nav-link">Email</a>
+            <a href="{{ '/support.html' | relative_url }}" class="nav-link">Get Help</a>
           </div>
           <div class="nav-btn-block">
             <a
-              id="button-top"
               href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en"
               target="_blank"
-              class="store-btn mb0 en w-inline-block"></a>
+              rel="noopener"
+              class="store-btn mb0 en"></a>
             <a
-              id="button-top"
               href="https://play.google.com/store/apps/details?id=com.praktika.app"
               target="_blank"
-              class="store-btn mb0 gp-en w-inline-block"></a>
+              rel="noopener"
+              class="store-btn mb0 gp-en"></a>
           </div>
         </div>
       </nav>
-      <div class="menu-button w-nav-button">
-        <div class="_0"></div>
-      </div>
     </div>
   </div>
-</div>
+</header>

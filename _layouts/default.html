@@ -6,9 +6,7 @@
 
   <body class="{{ page.body_class | default: 'main' }}">
 
-    <div class="header">
-      {% include navbar.html %}
-    </div>
+    {% include navbar.html %}
 
     {{ content }}
 

@@ -1,0 +1,108 @@
+<head>
+    <!-- Essential Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & Description -->
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}{% endif %}
+  </title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <!-- Preconnects for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <!-- Critical Styles -->
+  <link
+    href="{{ '/assets/css/style.css' | relative_url }}"
+    rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet">
+
+    <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ page.og_image | default: '/assets/images/Frame-2.png' | absolute_url }}">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ page.og_image | default: '/assets/images/Frame-2.png' | absolute_url }}">
+
+    <!-- Favicons -->
+  <link
+    rel="shortcut icon"
+    href="{{ '/assets/images/favicon.png' | relative_url }}"
+    type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/webclip.png' | relative_url }}">
+
+  <!-- App & Platform Meta -->
+  {% if site.app_store_id %}
+    <meta name="apple-itunes-app" content="app-id={{ site.app_store_id }}">
+  {% endif %}
+  <meta name="facebook-domain-verification" content="zbwt0nirjlwa92qj7hoichr0gkqxsh">
+
+  <!-- Webflow Touch Detection -->
+  <script>
+    !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);
+  </script>
+
+  <!-- Analytics & Tracking -->
+  {% if site.google_analytics_4 %}
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_4 }}"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '{{ site.google_analytics_4 }}');
+    </script>
+  {% endif %}
+
+  {% if site.facebook_pixel_id %}
+    <!-- Facebook Pixel -->
+    <script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '{{ site.facebook_pixel_id }}');
+          fbq('track', 'PageView');
+    </script>
+  {% endif %}
+
+  <!-- UTM Redirect Logic -->
+  <script>
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var utm_source = urlParams.get('utm_source') || '';
+    var campName = urlParams.get('utm_medium') || '';
+    var adsetName = urlParams.get('utm_campaign') || '';
+    var adName = urlParams.get('utm_content') || '';
+    var campId = urlParams.get('campaign') || '';
+    var adsetId = urlParams.get('adgroup') || '';
+    var adId = urlParams.get('creative') || '';
+    if (utm_source == 'FBAds' && campName) {
+      var adjRedirect = 'https://app.adjust.com/dl2uqni?';
+      adjRedirect += 'campaign=' + encodeURIComponent(campName) + '%20%28' + encodeURIComponent(campId) + '%29';
+      adjRedirect += '&adgroup=' + encodeURIComponent(adsetName) + '%20%28' + encodeURIComponent(adsetId) + '%29';
+      adjRedirect += '&creative=' + encodeURIComponent(adName) + '%20%28' + encodeURIComponent(adId) + '%29';
+      window.location = adjRedirect;
+    }
+  </script>
+
+  <!-- Jekyll SEO Tag -->
+  {% seo %}
+</head>

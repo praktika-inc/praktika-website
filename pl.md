@@ -1,5 +1,5 @@
 ---
-layout: webflow
+layout: default
 title: "Practico — Medytacja i Sen"
 description: "Aplikacja do medytacji w języku polskim. Pomoże poradzić sobie ze stresem, poprawi sen i produktywność. Darmowy kurs i krótkie sesje trwające 10 minut bez ezoteryki."
 wf_page: "60741f636cf6c0500edb2a53"

@@ -9,39 +9,6 @@ permalink: /pl/
 <div class="first-screen-2">
   <div class="content">
     <div class="first-screen-wrapper">
-      <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <div class="header-content">
-          <div class="navbar-row">
-            <div class="navbar-col">
-              <a href="{{ site.baseurl }}/pl/" aria-current="page" class="brand w-inline-block w--current"><img src="{{ site.baseurl }}/assets/images/new-logo-en.svg" alt="" class="logo-img"></a>
-            </div>
-            <nav role="navigation" class="nav-menu w-nav-menu">
-              <div class="nav">
-                <div class="nav-header">
-                  <div class="navbar-col">
-                    <a href="{{ site.baseurl }}/pl/" aria-current="page" class="brand w-inline-block w--current"><img src="{{ site.baseurl }}/assets/images/main-en_1.svg" alt="" class="logo-img"></a>
-                  </div>
-                  <div class="menu-button w-nav-button">
-                    <div class="_0"></div>
-                  </div>
-                </div>
-                <div class="menu-row">
-                  <a href="https://www.instagram.com/practico.polska/" target="_blank" class="nav-link w-nav-link">Instagram</a>
-                  <a href="https://www.facebook.com/practico.polska/" target="_blank" class="nav-link w-nav-link">Facebook</a>
-                  <a href="mailto:hi@praktika.app" class="nav-link w-nav-link">Email</a>
-                </div>
-                <div class="nav-btn-block">
-                  <a id="button-top" href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en" target="_blank" class="store-btn mb0 pl w-inline-block"></a>
-                  <a id="button-top" href="https://play.google.com/store/apps/details?id=com.praktika.app" target="_blank" class="store-btn mb0 gp-pl w-inline-block"></a>
-                </div>
-              </div>
-            </nav>
-            <div class="menu-button w-nav-button">
-              <div class="_0"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="main-row">
         <div class="desktop-block"><img src="{{ site.baseurl }}/assets/images/Group-42x.png" width="350" sizes="(max-width: 767px) 100vw, (max-width: 991px) 275px, 350px" srcset="{{ site.baseurl }}/assets/images/Group-42x-p-500.png 500w, {{ site.baseurl }}/assets/images/Group-42x.png 704w" alt="" class="phone-img"></div>
         <div class="main-col">

@@ -2,7 +2,6 @@
 layout: default
 title: "Privacy Policy"
 description: "Praktika Privacy Policy - How we collect, use, and protect your personal data in our meditation app."
-wf_page: "6197ad27365fd4180a1146d5"
 body_class: "main"
 ---
 

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html
-  data-wf-page="{{ page.wf_page | default: '61bc88546af55f811090e5e9' }}"
-  data-wf-site="5ce3f202b5d6673078f351a0"
-  lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {% include head.html %}
 
   <body class="{{ page.body_class | default: 'main' }}">
 
-    {{ content }}
+      {{ content }}
 
     {% include footer.html %}
 

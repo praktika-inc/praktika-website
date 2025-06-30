@@ -2,7 +2,6 @@
 layout: default
 title: "License Agreement"
 description: "Public Offer Agreement for Praktika meditation app - Terms and conditions for using our mobile application and audio content."
-wf_page: "61978d9a7eaae77b7f2f2316"
 body_class: "main"
 ---
 

@@ -2,7 +2,6 @@
 layout: default
 title: "Help & Support"
 description: "Send us a message and we'll help with any issue - Contact Praktika support team"
-wf_page: "61bc99ffbf99eb49e1541c73"
 body_class: "main"
 ---
 

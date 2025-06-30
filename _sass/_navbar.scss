@@ -1,90 +1,32 @@
-/* ===================================
-   NAVBAR STYLES
-   =================================== */
+// Base navbar styles
+.navbar { padding: 40px 0; }
 
-/* Base navbar styles */
-.navbar {
-  padding: 50px 5% 32px;
-  background-color: transparent;
-}
-
-.header-content {
-  justify-content: space-between;
+.navbar-content {
   align-items: center;
-  max-width: 1032px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
 
 .brand {
   display: inline-block;
-  max-width: 100%;
   width: 175px;
   margin-top: -6px;
 }
 
-.navbar-row {
-  flex: 1;
-  align-items: center;
-  display: flex;
-}
-
-.navbar-col {
-  text-align: left;
-  flex: 1;
-}
-
-.nav-link {
-  color: #008eaf;
-  border-bottom: 2px solid transparent;
-  flex: none;
-  margin-left: 75px;
-  margin-right: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 21px;
-  transition: all 0.1s;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: var(--black);
-}
-
-.nav-link.current {
-  color: #000;
-  border-bottom-color: #35b2cf;
-}
+.navbar-logo { margin-right: auto; }
 
 .menu-row {
   justify-content: flex-end;
   align-items: center;
-  display: flex;
+  gap: 60px;
 }
 
-.nav-menu {
-  float: none;
-}
+// MOBILE MENU STYLES
 
-.nav-header,
-.nav-btn-block {
-  display: none;
-}
+.burger-toggle { display: none; }
 
-.logo-img {
-  width: 100%;
-}
-
-/* ===================================
-   MOBILE MENU STYLES (CSS-only)
-   =================================== */
-
-.mobile-menu-toggle {
-  display: none;
-}
-
-.mobile-menu-button {
+.burger-button {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -98,7 +40,7 @@
   position: relative;
 }
 
-.mobile-menu-close {
+.burger-close {
   display: none;
   position: absolute;
   top: 20px;
@@ -128,7 +70,7 @@
   transform: rotate(-45deg);
 }
 
-.hamburger-line {
+.burger-line {
   width: 28px;
   height: 3px;
   background-color: #008eaf;
@@ -137,105 +79,51 @@
   transform-origin: center;
 }
 
-/* ===================================
-   RESPONSIVE STYLES
-   =================================== */
-
-/* Tablet styles (max-width: 991px) */
-@media screen and (max-width: 991px) {
-  .brand {
-    width: 160px;
-  }
-
-  .nav-link {
-    margin-left: 41px;
-  }
-}
-
 /* Mobile styles (max-width: 767px) */
 @media screen and (max-width: 767px) {
-  .navbar {
-    padding-top: 30px;
-    padding-bottom: 16px;
-  }
 
-  .brand {
-    margin-top: 0;
-  }
+  .navbar { padding-top: 20px; }
 
-  .mobile-menu-button {
-    display: flex;
-  }
-  
-  .mobile-menu-close {
-    display: flex;
-  }
+  .navbar-logo { z-index: 99999; }
+
+  .burger-button, .burger-close { display: flex; }
   
   .nav-menu {
+    flex-direction: column;
+    padding: 40px 20px;
+    justify-content: flex-start;
+    align-items: stretch;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: #fff;
     backdrop-filter: blur(10px);
     z-index: 9999;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     overflow-y: auto;
-    background-image: linear-gradient(#077b9b, #00dce9);
   }
   
-  .mobile-menu-toggle:checked ~ .nav-menu {
-    transform: translateX(0);
-  }
-  
-  .mobile-menu-toggle:checked ~ .mobile-menu-button .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-  }
-  
-  .mobile-menu-toggle:checked ~ .mobile-menu-button .hamburger-line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .mobile-menu-toggle:checked ~ .mobile-menu-button .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-  }
-  
-  .nav {
-    flex-direction: column;
-    height: 100%;
-    padding: 80px 30px 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-  
-  .nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  
-  .nav-header .brand {
-    width: 200px;
-  }
+  .burger-toggle:checked ~ .nav-menu { transform: translateX(0); }
+  .burger-toggle:checked ~ .burger-button .burger-line:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+  .burger-toggle:checked ~ .burger-button .burger-line:nth-child(2) { opacity: 0; }
+  .burger-toggle:checked ~ .burger-button .burger-line:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
   
   .menu-row {
     flex-direction: column;
-    flex: 1;
+    gap: 0;
     justify-content: flex-start;
     align-items: stretch;
     margin-bottom: 40px;
   }
   
   .nav-link {
-    color: #fff;
-    text-align: center;
-    padding: 18px 15px;
+    text-align: left;
+    padding: 20px 16px;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -247,39 +135,16 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
   
-  .nav-btn-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
   .store-btn {
     margin-bottom: 0;
   }
 }
 
-/* Small mobile styles (max-width: 479px) */
-@media screen and (max-width: 479px) {
-  .navbar {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 /* Desktop styles (min-width: 768px) */
 @media screen and (min-width: 768px) {
-  .mobile-menu-button {
-    display: none;
-  }
-  
-  .mobile-menu-close {
-    display: none;
-  }
-  
-  .mobile-menu-toggle {
-    display: none;
-  }
+  .burger-button, .burger-close, .burger-toggle { display: none; }
+
+  .nav-header, .navbar .store-btn-block { display: none; }
   
   .nav-menu {
     position: static;

@@ -1,79 +1,66 @@
 <header class="navbar">
-  <div class="header-content flex">
-    <div class="navbar-row">
-      <div class="navbar-col">
-        <a
-          href="{{ '/' | relative_url }}"
-          {% if page.url == '/' %}
-          aria-current="page"
-          {% endif %}
-          class="brand{% if page.url == '/' %} current{% endif %}">
-          <img
-            src="{{ '/assets/images/icon-logo-b.svg' | relative_url }}"
-            alt="Praktika Logo"
-            class="logo-img">
-        </a>
-      </div>
+  <div class="navbar-content flex">
 
-      <!-- Mobile Menu Toggle -->
-      <input
-        type="checkbox"
-        id="mobile-menu-toggle"
-        class="mobile-menu-toggle"
-        aria-label="Toggle mobile menu">
-      <label for="mobile-menu-toggle" class="mobile-menu-button">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+    <div class="navbar-logo">
+      <a
+        href="{{ '/' | relative_url }}"
+        {% if page.url == '/' %}
+        aria-current="page"
+        {% endif %}
+        class="brand{% if page.url == '/' %} current{% endif %}">
+        <img
+          src="{{ '/assets/images/icon-logo-b.svg' | relative_url }}"
+          alt="Praktika Logo"
+          class="logo-img">
+      </a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <input
+      type="checkbox"
+      id="burger-toggle"
+      class="burger-toggle"
+      aria-label="Toggle mobile menu">
+    <label for="burger-toggle" class="burger-button">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </label>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu flex">
+      <!-- Close button inside the menu -->
+      <label for="burger-toggle" class="burger-close">
+        <span class="close-line"></span>
+        <span class="close-line"></span>
       </label>
 
-      <!-- Navigation Menu -->
-      <nav class="nav-menu">
-        <!-- Close button inside the menu -->
-        <label for="mobile-menu-toggle" class="mobile-menu-close">
-          <span class="close-line"></span>
-          <span class="close-line"></span>
-        </label>
-
-        <div class="nav">
-          <div class="nav-header">
-            <div class="navbar-col">
-              <a href="{{ '/pl/' | relative_url }}" class="brand">
-                <img
-                  src="{{ '/assets/images/main-en_1.svg' | relative_url }}"
-                  alt="Praktika Main Logo"
-                  class="logo-img">
-              </a>
-            </div>
-          </div>
-          <div class="menu-row">
-            <a
-              href="https://www.instagram.com/practico.world/"
-              target="_blank"
-              rel="noopener"
-              class="nav-link">Instagram</a>
-            <a
-              href="https://www.facebook.com/practico.world/"
-              target="_blank"
-              rel="noopener"
-              class="nav-link">Facebook</a>
-            <a href="mailto:hi@praktika.app?subject=Support%20request" class="nav-link">Email</a>
-            <a href="{{ '/support.html' | relative_url }}" class="nav-link">Get Help</a>
-          </div>
-          <div class="nav-btn-block">
-            <a
-              href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en"
-              target="_blank"
-              rel="noopener"
-              class="store-btn mb0 en"></a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.praktika.app"
-              target="_blank"
-              rel="noopener"
-              class="store-btn mb0 gp-en"></a>
-          </div>
-        </div>
-      </nav>
-    </div>
+      <div class="menu-row flex">
+        <a
+          href="https://www.instagram.com/practico.world/"
+          target="_blank"
+          rel="noopener"
+          class="nav-link">Instagram</a>
+        <a
+          href="https://www.facebook.com/practico.world/"
+          target="_blank"
+          rel="noopener"
+          class="nav-link">Facebook</a>
+        <a href="mailto:hi@praktika.app?subject=Support%20request" class="nav-link">Email</a>
+        <a href="{{ '/support.html' | relative_url }}" class="nav-link">Get Help</a>
+      </div>
+      <div class="store-btn-block">
+        <a
+          href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en"
+          target="_blank"
+          rel="noopener"
+          class="store-btn mb0 en"></a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.praktika.app"
+          target="_blank"
+          rel="noopener"
+          class="store-btn mb0 gp-en"></a>
+      </div>
+    </nav>
   </div>
 </header>

@@ -1,4 +1,26 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+// Webflow CSS imports (converted to SCSS partials)
+@import 'normalize';
+@import 'webflow'; 
+@import 'praktikapp';
+
+// Custom Jekyll styles
+.jekyll-content {
+  // Add custom styles here if needed in the future
+  position: relative;
+}
+
+// Custom utility classes for Jekyll
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00B2FF" offset="0%"></stop>
+            <stop stop-color="#007AFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="www" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tab" transform="translate(-330.000000, -1543.000000)" stroke="url(#linearGradient-1)" stroke-width="6">
+            <g id="Group-3" transform="translate(333.000000, 1546.000000)">
+                <circle id="Oval-Copy" cx="50" cy="50" r="50"></circle>
+                <polyline id="Path-3-Copy" points="48 18 48 48.8198481 72.1015625 72.3671875"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

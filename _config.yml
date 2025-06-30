@@ -1,6 +1,49 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-minimal
+title: "Practico — Meditation & Sleep"
+description: "A non-esoteric meditation app. Your personal mindfulness guide who's always there. Helps you cope with stress, improve your sleep, and increase productivity."
+baseurl: ""
+url: ""
+lang: ru
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - script/
+
+# SEO and social
+social:
+  facebook: practicoapp
+  instagram: practicoapp
+  
+# Google Analytics
+google_analytics: UA-140680835-1
+google_analytics_4: G-FS0M8R7KHB
+
+# Facebook settings
+facebook_app_id: 1260724791513802
+facebook_pixel_id: 386000906841885
+
+# Yandex Metrika
+yandex_metrika: 53745279
+
+# App Store
+app_store_id: 1467786415

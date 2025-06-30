@@ -5,10 +5,6 @@ description: "Praktika Privacy Policy - How we collect, use, and protect your pe
 body_class: "main"
 ---
 
-<div class="blog-header">
-  {% include navbar.html %}
-</div>
-
 <div class="content">
   <h1 class="license-title">"PRAKTIKA" PRIVACY POLICY</h1>
   

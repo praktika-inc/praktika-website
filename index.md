@@ -8,7 +8,6 @@ lang: ru
 <div class="first-screen-2">
   <div class="content">
     <div class="first-screen-wrapper">
-      {% include navbar.html %}
       <div class="main-row">
         <div class="desktop-block"><img src="{{ '/assets/images/Group-42x_1.png' | relative_url }}" width="350" alt="" class="phone-img"></div>
         <div class="main-col">

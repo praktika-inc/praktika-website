@@ -5,10 +5,6 @@ description: "Public Offer Agreement for Praktika meditation app - Terms and con
 body_class: "main"
 ---
 
-<div class="blog-header">
-  {% include navbar.html %}
-</div>
-
 <div class="content">
   <h1 class="license-title">PUBLIC OFFER AGREEMENT</h1>
   <div class="license-text">United States, Florida, Miami Lakes.<br>March 10, 2022<br></div>

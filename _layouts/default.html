@@ -3,9 +3,14 @@
 
   {% include head.html %}
 
+
   <body class="{{ page.body_class | default: 'main' }}">
 
-      {{ content }}
+    <div class="header">
+      {% include navbar.html %}
+    </div>
+
+    {{ content }}
 
     {% include footer.html %}
 

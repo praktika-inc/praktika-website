@@ -7,10 +7,6 @@ permalink: /ru/support/
 body_class: "main"
 ---
 
-<div class="blog-header">
-  {% include navbar.html %}
-</div>
-
 <div class="main">
   <div class="content">
     <div class="first-screen-wrapper">

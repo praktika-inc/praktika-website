@@ -6,10 +6,6 @@ lang: ru
 permalink: /ru/blog/
 ---
 
-<div class="blog-header">
-  {% include navbar.html %}
-</div>
-
 <div class="content">
   <div class="blog-content">
     <h1 class="blog-heading blog-h1"><span class="bh_ic">/</span> <span class="bh_text">Блог о медитации без эзотерики</span></h1>

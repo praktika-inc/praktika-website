@@ -1,0 +1,117 @@
+/* Design System Variables */
+
+@use "sass:map";
+
+// =============================================================================
+// COLORS
+// =============================================================================
+
+$colors: (
+  primary: #008eaf,
+  primary-hover: #35b2cf,
+  accent: #00abd9,
+  accent-hover: #4adeba,
+  text-primary: #000,
+  text-secondary: #333,
+  text-muted: #9b9b9b,
+  white: #fff,
+  border: #ccc,
+  background-light: #fafafa,
+  transparent: #0000,
+  gradient-start: #34afd0,
+  gradient-end: #4adeba,
+  mobile-nav-start: #077b9b,
+  mobile-nav-end: #00dce9,
+  border-alpha: #fff3
+);
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+$fonts: (
+  primary: (Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif),
+  secondary: (Roboto, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif)
+);
+
+$font-weights: (
+  light: 300,
+  normal: 400,
+  bold: 700
+);
+
+$font-sizes: (
+  xs: 13px,
+  sm: 14px,
+  base: 16px,
+  lg: 18px,
+  xl: 19px,
+  xxl: 20px,
+  h3: 24px,
+  h2: 29px,
+  h1: 32px
+);
+
+$line-heights: (
+  tight: 1.2,
+  base: 1.4,
+  relaxed: 1.6
+);
+
+// =============================================================================
+// SPACING & LAYOUT
+// =============================================================================
+
+$spacing: (
+  xs: 5px,
+  sm: 10px,
+  md: 16px,
+  lg: 20px,
+  xl: 30px,
+  xxl: 40px,
+  xxxl: 50px,
+  large: 100px
+);
+
+$breakpoints: (
+  tablet: 991px,
+  mobile: 767px,
+  mobile-sm: 479px
+);
+
+$layout: (
+  max-width-content: 1032px,
+  max-width-blog: 800px,
+  max-width-post: 640px,
+  max-width-store: 303px,
+  max-width-contact: 300px,
+  max-width-blog-store: 320px
+);
+
+// =============================================================================
+// HELPER FUNCTIONS
+// =============================================================================
+
+@function color($name) {
+  @return map.get($colors, $name);
+}
+
+@function font($name) {
+  @return map.get($fonts, $name);
+}
+
+@function font-size($name) {
+  @return map.get($font-sizes, $name);
+}
+
+@function spacing($name) {
+  @return map.get($spacing, $name);
+}
+
+@function breakpoint($name) {
+  @return map.get($breakpoints, $name);
+}
+
+@function layout($name) {
+  @return map.get($layout, $name);
+}

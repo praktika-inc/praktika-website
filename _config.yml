@@ -18,6 +18,14 @@ default_locale_in_subfolder: false
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Plugins configuration
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -26,11 +34,14 @@ plugins:
   - jekyll-multiple-languages-plugin # https://github.com/kurtsson/jekyll-multiple-languages-plugin
   - jekyll-target-blank #https://github.com/keithmifsud/jekyll-target-blank
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:year/:month/:day/:title/
+# Posts defaults
+defaults:
+  - scope:
+      path: "_i18n/ru/_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "ru"
 
 # Exclude from processing
 exclude:

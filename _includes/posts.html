@@ -6,16 +6,25 @@
     </h1>
     <div class="w-dyn-list">
       <div role="list" class="collection-list w-dyn-items w-row">
-        <div role="listitem" class="post-card w-dyn-item w-col w-col-4">
-          <a href="#" class="post-link w-inline-block">
-            <div class="blog-preview"></div>
-            <h2 class="blog-name w-dyn-bind-empty"></h2>
-          </a>
+        {% for post in site.posts limit: 9 %}
+          <div role="listitem" class="post-card w-dyn-item w-col w-col-4">
+            <a href="{{ post.url | relative_url }}" class="post-link w-inline-block">
+              {% if post.image %}
+                <div class="blog-preview" style="background-image: url('{{ post.image | relative_url }}')"></div>
+              {% else %}
+                <div class="blog-preview"></div>
+              {% endif %}
+              <h2 class="blog-name">{{ post.title }}</h2>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if site.posts.size == 0 %}
+        <div class="w-dyn-empty">
+          <div>Нет постов.</div>
         </div>
-      </div>
-      <div class="w-dyn-empty">
-        <div>No items found.</div>
-      </div>
+      {% endif %}
       <div
         role="navigation"
         aria-label="List"

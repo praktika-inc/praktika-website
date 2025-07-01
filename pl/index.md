@@ -9,8 +9,8 @@ permalink: /pl/
   <div class="content">
     <div class="first-screen-wrapper">
       <div class="main-row">
-        <div class="desktop-block"><img src="{{ site.baseurl }}/assets/images/Group-42x.png" width="350" sizes="(max-width: 767px) 100vw, (max-width: 991px) 275px, 350px" srcset="{{ site.baseurl }}/assets/images/Group-42x-p-500.png 500w, {{ site.baseurl }}/assets/images/Group-42x.png 704w" alt="" class="phone-img"></div>
-        <div class="main-col">
+        <div class="main-image"><img src="{{ site.baseurl }}/assets/images/Group-42x.png" width="350" sizes="(max-width: 767px) 100vw, (max-width: 991px) 275px, 350px" srcset="{{ site.baseurl }}/assets/images/Group-42x-p-500.png 500w, {{ site.baseurl }}/assets/images/Group-42x.png 704w" alt="" class="phone-img"></div>
+        <div class="main-info">
           <h1 class="h1">Apka do medytacji<br>bez mistycyzmu i ezoteryki</h1>
           <div class="mob-row">
             <div class="mobile-block"><img src="{{ site.baseurl }}/assets/images/Group-42x.png" width="187" sizes="(max-width: 479px) 402px, (max-width: 767px) 275px, 100vw" srcset="{{ site.baseurl }}/assets/images/Group-42x-p-500.png 500w, {{ site.baseurl }}/assets/images/Group-42x.png 704w" alt="" class="phone-img"></div>

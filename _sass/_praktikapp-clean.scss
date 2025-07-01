@@ -1,3 +1,11 @@
+// === USED CLASSES ONLY ===
+// Clean version of praktikapp.scss with only actively used styles
+
+:root {
+  --black: black;
+  --white: white;
+}
+
 // Base styles
 body {
   color: #333;
@@ -15,16 +23,12 @@ a {
   &:hover, &.current { color: #000; }
 }
 
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 // License page styles
 .license-title {
   color: #000;
   text-align: left;
   text-transform: uppercase;
+  margin: 50px 60px 30px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
@@ -32,6 +36,7 @@ a {
 .license-text {
   color: #000;
   text-align: left;
+  margin: 20px 60px;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -41,6 +46,7 @@ a {
 .license-heading {
   color: #000;
   text-align: left;
+  margin: 40px 60px 20px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
@@ -77,7 +83,7 @@ a {
   margin-left: -46px;
 }
 
-.main-info {
+.main-col {
   text-align: left;
   margin-left: 20px;
   padding-top: 79px;
@@ -372,7 +378,7 @@ a {
 }
 
 // Layout helpers
-.main-image {
+.desktop-block {
   flex: none;
 }
 
@@ -445,7 +451,7 @@ a {
     margin-left: -53px;
   }
 
-  .main-info {
+  .main-col {
     margin-left: -4px;
     padding-top: 43px;
   }
@@ -537,7 +543,7 @@ a {
     margin-right: -18px;
   }
 
-  .main-info {
+  .main-col {
     flex-direction: column;
     flex: 1;
     align-items: center;
@@ -562,7 +568,7 @@ a {
     width: 100%;
   }
 
-  .main-image {
+  .desktop-block {
     display: none;
   }
 
@@ -682,7 +688,7 @@ a {
     margin: -33px 0 -90px;
   }
 
-  .main-info {
+  .main-col {
     flex-direction: column;
     align-items: center;
     display: flex;

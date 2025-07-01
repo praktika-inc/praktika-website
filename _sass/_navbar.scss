@@ -1,112 +1,78 @@
 // Base navbar styles
-.navbar { padding: 40px 0; }
+.navbar { padding: 2.5em 0; }
 
 .navbar-content {
-  align-items: center;
+  position: relative;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.brand {
-  display: inline-block;
-  width: 175px;
-  margin-top: -6px;
-}
-
 .navbar-logo { margin-right: auto; }
 
-.menu-row {
-  justify-content: flex-end;
-  align-items: center;
-  gap: 60px;
+.logo-link {
+  display: inline-block;
+  width: 164px;
 }
-
-// MOBILE MENU STYLES
 
 .burger-toggle { display: none; }
 
-.burger-button {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 44px;
-  height: 44px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  z-index: 10;
-  position: relative;
-}
-
-.burger-close {
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-  z-index: 10001;
-  justify-content: center;
+.menu-row {
   align-items: center;
+  gap: 3.75em;
 }
 
-.close-line {
+// Burger menu styles
+
+.burger-button {
   position: absolute;
-  width: 28px;
-  height: 3px;
-  background-color: #008eaf;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.close-line:nth-child(1) {
-  transform: rotate(45deg);
-}
-
-.close-line:nth-child(2) {
-  transform: rotate(-45deg);
+  top: 0;
+  right: 0;
+  width: 2.5em;
+  height: 2.5em;
+  flex-direction: column;
+  justify-content: center;
+  gap: .25em;
+  cursor: pointer;
+  padding: .5em 0 .5em 1.25em;
 }
 
 .burger-line {
-  width: 28px;
-  height: 3px;
-  background-color: #008eaf;
-  border-radius: 2px;
+  width: 1.5em;
+  height: .25em;
+  background-color: $link-color;
+  border-radius: .125em;
   transition: all 0.3s ease;
   transform-origin: center;
 }
 
-/* Mobile styles (max-width: 767px) */
-@media screen and (max-width: 767px) {
+// Mobile styles
+@media screen and (max-width: 720px) {
 
-  .navbar { padding-top: 20px; }
+  .navbar { padding-top: 1.25em; }
 
-  .navbar-logo { z-index: 99999; }
+  .burger-button { display: flex; }
 
-  .burger-button, .burger-close { display: flex; }
+  .navbar-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
   
   .nav-menu {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 0;
     justify-content: flex-start;
     align-items: stretch;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    backdrop-filter: blur(10px);
-    z-index: 9999;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    overflow-y: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
   }
   
-  .burger-toggle:checked ~ .nav-menu { transform: translateX(0); }
+  .burger-toggle:checked ~ .nav-menu { 
+    max-height: 500px;
+    padding-top: 1.25em;
+  }
   .burger-toggle:checked ~ .burger-button .burger-line:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
   .burger-toggle:checked ~ .burger-button .burger-line:nth-child(2) { opacity: 0; }
   .burger-toggle:checked ~ .burger-button .burger-line:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
@@ -114,45 +80,18 @@
   .menu-row {
     flex-direction: column;
     gap: 0;
-    justify-content: flex-start;
     align-items: stretch;
-    margin-bottom: 40px;
   }
   
   .nav-link {
-    text-align: left;
-    padding: 20px 16px;
-    margin: 0;
-    font-size: 20px;
-    font-weight: 400;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 1.25em 0;
+    border-bottom: 1px solid #eeeeee;
     transition: all 0.3s ease;
   }
-  
-  .nav-link:hover {
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .store-btn {
-    margin-bottom: 0;
-  }
 }
 
-/* Desktop styles (min-width: 768px) */
-@media screen and (min-width: 768px) {
-  .burger-button, .burger-close, .burger-toggle { display: none; }
-
-  .nav-header, .navbar .store-btn-block { display: none; }
-  
-  .nav-menu {
-    position: static;
-    transform: none;
-    background: none;
-    backdrop-filter: none;
-    height: auto;
-    width: auto;
-    background-image: none;
+// Desktop styles
+@media screen and (min-width: 721px) {
+  .burger-button { display: none; }
   }
-}

@@ -1,13 +1,34 @@
-// Box sizing and basic setup
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+// Brand Colors
+$blue-color: #008eaf;
+$white-color: #fff;
+$black-color: #333;
+$grey-color: #9b9b9b;
+$light-color: #eee;
+
+// Responsive Breakpoints
+$mobile-max: 720px;
+
+@mixin mobile { @media screen and (max-width: #{$mobile-max}) { @content; } }
+
+@mixin store-button($width, $bg-light, $bg-dark) {
+  height: 44px;
+  width: #{$width}px;
+  background-size: #{$width}px 44px;
+  background-image: url($bg-light);
+  &:hover { background-image: url($bg-dark); }
 }
 
-html { height: 100%; }
+// Base styles and normalization
 
-body {
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body { 
+  margin: 0;
   min-height: 100%;
   background-color: $white-color;
   color: $black-color;
@@ -18,17 +39,42 @@ body {
   padding: 0 20px;
 }
 
-img {
+header, nav { display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img { 
+  border: 0;
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
 }
 
-a {
+svg:not(:root) { overflow: hidden; }
+
+a { 
+  background-color: transparent;
   color: $blue-color;
   text-decoration: none;
 
+  &:active, &:hover { outline: 0; }
   &:hover, &.current { color: $black-color; }
+}
+
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  line-height: normal;
+}
+
+input[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0;
 }
 
 // Touch device styles
@@ -36,9 +82,7 @@ html.w-mod-touch * {
   background-attachment: scroll !important;
 }
 
-// =============================================================================
-// LAYOUT UTILITIES
-// =============================================================================
+// Layout utilities
 
 .content {
   max-width: 800px;
@@ -51,13 +95,9 @@ html.w-mod-touch * {
   display: inline-block;
 }
 
-.flex {
-  display: flex;
-}
+.flex { display: flex; }
 
-// =============================================================================
 // TYPOGRAPHY
-// =============================================================================
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -65,9 +105,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 38px;
-  line-height: 44px;
-  margin-top: 20px;
+  font-size: 2em; /* normalize default */
+  margin: 0.67em 0; /* normalize default */
+  
+  /* Our custom overrides when needed */
+  @at-root .hero-cta h1 {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.125;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 h2 {
@@ -93,9 +141,7 @@ ul, ol {
   padding-left: 40px;
 }
 
-// =============================================================================
 // GRID SYSTEM
-// =============================================================================
 
 .w-row {
   margin-left: -10px;
@@ -130,7 +176,7 @@ ul, ol {
 }
 
 // Responsive grid adjustments
-@media screen and (max-width: 767px) {
+@include mobile {
   .w-row {
     margin-left: 0;
     margin-right: 0;
@@ -143,9 +189,7 @@ ul, ol {
   }
 }
 
-// =============================================================================
 // CONTENT COMPONENTS
-// =============================================================================
 
 // Rich text (used for blog posts)
 .w-richtext:before,
@@ -173,24 +217,14 @@ ul, ol {
   background-color: $light-color;
 }
 
-// =============================================================================
 // STORE BUTTONS
-// =============================================================================
 
 .store-buttons { gap: 1em; }
 
-.store-button { height: 44px; }
-
 .store-button.app-store {
-  background-size: 128px 44px;
-  width: 128px;
-  background-image: url('/assets/images/as-button-en-l.svg');
-  &:hover { background-image: url('/assets/images/as-button-en-d.svg'); }
+  @include store-button(128, '/assets/images/as-button-en-l.svg', '/assets/images/as-button-en-d.svg');
 }
 
 .store-button.google-play {
-  background-size: 144px 44px;
-  width: 144px;
-  background-image: url('/assets/images/gp-button-en-l.svg');
-  &:hover { background-image: url('/assets/images/gp-button-en-d.svg'); }
+  @include store-button(144, '/assets/images/gp-button-en-l.svg', '/assets/images/gp-button-en-d.svg');
 }

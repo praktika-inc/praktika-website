@@ -47,7 +47,7 @@
 }
 
 // Mobile styles
-@media screen and (max-width: 720px) {
+@include mobile {
 
   .navbar { padding-top: 1.25em; }
 
@@ -92,6 +92,6 @@
 }
 
 // Desktop styles
-@media screen and (min-width: 721px) {
+@media screen and (min-width: #{$mobile-max + 1px}) {
   .burger-button { display: none; }
-  }
+}

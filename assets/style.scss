@@ -1,11 +1,7 @@
 ---
 ---
 
-// Variables and Design Tokens
-@import 'variables';
-
-// Base styles (merged webflow + praktikapp)
-@import 'normalize';
+// Base styles (includes variables, mixins, normalize, base, utilities)
 @import 'base';
 @import 'navbar';
 @import 'footer';

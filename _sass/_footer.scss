@@ -28,11 +28,10 @@
 }
 
 // Responsive design for footer
-@media screen and (max-width: 720px) {
-  
-    .footer-content {
-        gap: 2em;
-    }
+@include mobile {
+  .footer-content {
+    gap: 2em;
+  }
 
   .footer-links {
     flex-direction: column;

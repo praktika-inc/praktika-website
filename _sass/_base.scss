@@ -1,0 +1,196 @@
+// Box sizing and basic setup
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { height: 100%; }
+
+body {
+  min-height: 100%;
+  background-color: $white-color;
+  color: $black-color;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+a {
+  color: $blue-color;
+  text-decoration: none;
+
+  &:hover, &.current { color: $black-color; }
+}
+
+// Touch device styles
+html.w-mod-touch * {
+  background-attachment: scroll !important;
+}
+
+// =============================================================================
+// LAYOUT UTILITIES
+// =============================================================================
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// Display utilities
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+// =============================================================================
+// GRID SYSTEM
+// =============================================================================
+
+.w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.w-row:before,
+.w-row:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.w-row:after {
+  clear: both;
+}
+
+.w-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.w-col-4 {
+  width: 33.33333333%;
+}
+
+// Responsive grid adjustments
+@media screen and (max-width: 767px) {
+  .w-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .w-col {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+}
+
+// =============================================================================
+// CONTENT COMPONENTS
+// =============================================================================
+
+// Rich text (used for blog posts)
+.w-richtext:before,
+.w-richtext:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.w-richtext:after {
+  clear: both;
+}
+
+.w-richtext ol,
+.w-richtext ul {
+  overflow: hidden;
+}
+
+// Dynamic content (used for blog)
+.w-dyn-empty {
+  padding: 10px;
+  background-color: $light-color;
+}
+
+// =============================================================================
+// STORE BUTTONS
+// =============================================================================
+
+.store-buttons { gap: 1em; }
+
+.store-button { height: 44px; }
+
+.store-button.app-store {
+  background-size: 128px 44px;
+  width: 128px;
+  background-image: url('/assets/images/as-button-en-l.svg');
+  &:hover { background-image: url('/assets/images/as-button-en-d.svg'); }
+}
+
+.store-button.google-play {
+  background-size: 144px 44px;
+  width: 144px;
+  background-image: url('/assets/images/gp-button-en-l.svg');
+  &:hover { background-image: url('/assets/images/gp-button-en-d.svg'); }
+}

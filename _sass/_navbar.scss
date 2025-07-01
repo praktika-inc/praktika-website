@@ -40,7 +40,7 @@
 .burger-line {
   width: 1.5em;
   height: .25em;
-  background-color: $link-color;
+  background-color: $blue-color;
   border-radius: .125em;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -86,7 +86,7 @@
   .nav-link {
     text-align: center;
     padding: 1.25em 0;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid $light-color;
     transition: all 0.3s ease;
   }
 }

@@ -4,13 +4,12 @@
 // Variables and Design Tokens
 @import 'variables';
 
-// Webflow CSS imports (converted to SCSS partials)
+// Base styles (merged webflow + praktikapp)
 @import 'normalize';
-@import 'webflow'; 
+@import 'base';
 @import 'navbar';
 @import 'footer';
 @import 'hero';
-@import 'praktikapp';
 
 // Custom Jekyll styles
 .jekyll-content {

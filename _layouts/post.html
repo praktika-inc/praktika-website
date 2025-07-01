@@ -8,7 +8,7 @@ layout: default
   {% if page.image %}
     <img
       alt="{{ page.title }}"
-      src="{{ page.image | relative_url }}"
+      src="{{ page.image | prepend: site.baseurl_root }}"
       class="post-image">
   {% endif %}
 

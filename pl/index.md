@@ -33,5 +33,3 @@ permalink: /pl/
     </div>
   </div>
 </div>
-
-{% include footer.html %}

@@ -33,5 +33,3 @@ permalink: /ru/
     </div>
   </div>
 </div>
-
-{% include footer.html %}

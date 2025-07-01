@@ -95,11 +95,6 @@ a {
   padding-bottom: 50px;
 }
 
-.content {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 .cta {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -396,23 +391,7 @@ a {
   font-size: 16px;
 }
 
-.beta-form-button {
-  background-image: linear-gradient(#4adeba, #00abd9);
-  border-radius: 28px;
-  width: 88%;
-  height: 46px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 16px;
-  font-weight: 300;
-}
 
-.beta-form-button:hover {
-  opacity: .8;
-  background-color: #00abd9;
-  background-image: linear-gradient(#4adeba, #00abd9);
-}
 
 .form-heading {
   margin-top: 0;
@@ -420,83 +399,19 @@ a {
   font-weight: 500;
 }
 
-.beta-form-undertext {
-  color: #9b9b9b;
-  margin-bottom: 30px;
-  font-size: 13px;
-  line-height: 140%;
-}
 
-.success-message {
-  background-color: #0000;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 19px;
-}
 
-.beta-form-block {
-  margin-bottom: 0;
-}
 
-.error-message {
-  border-radius: 10px;
-  margin-top: 20px;
-  font-size: 13px;
-  line-height: 15px;
-}
 
-.feedback-form {
-  text-align: center;
-  max-width: 300px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .form {
   text-align: left;
 }
 
-.submit-button {
-  width: 100%;
-}
 
-.feedback-form-button {
-  color: #fff;
-  text-align: center;
-  background-image: linear-gradient(#4adeba, #00abd9);
-  border-radius: 28px;
-  width: 100%;
-  height: 46px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-}
 
-.feedback-form-button:hover {
-  opacity: .8;
-  background-color: #00abd9;
-  background-image: linear-gradient(#4adeba, #00abd9);
-}
 
-.feedback-form-button.blog-pagination {
-  border-width: 0;
-  max-width: 200px;
-  margin-bottom: 0;
-  padding-top: 13px;
-  padding-left: 20px;
-}
-
-.feedback-form-button.blog-pagination.back {
-  color: #333;
-  background-image: linear-gradient(#fff, #dfdfdf);
-  border-width: 1px;
-  border-color: #eee;
-  padding-top: 11px;
-}
 
 .feedback-input {
   text-align: center;
@@ -517,27 +432,7 @@ a {
   font-size: 16px;
 }
 
-.feedback-textarea {
-  text-align: center;
-  background-color: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  border-radius: 16px;
-  max-width: 100%;
-  min-height: 100px;
-  max-height: 300px;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 12px;
-  font-size: 16px;
-  box-shadow: inset 0 1px 1px #0000001a;
-}
 
-.feedback-textarea::placeholder {
-  color: #9c9c9c;
-  text-align: center;
-  font-size: 16px;
-}
 
 .feedback-form-text {
   text-align: center;
@@ -562,22 +457,12 @@ a {
   text-decoration: underline;
 }
 
-.success-message-2 {
-  background-color: #0000;
-  font-size: 20px;
-  line-height: 140%;
-}
 
-.error-message-copy {
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 0;
-  font-size: 13px;
-  line-height: 15px;
-}
 
 .footer-links {
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75em;
 }
 
 .social-link {
@@ -598,17 +483,6 @@ a {
 
 .social-links {
   justify-content: center;
-  display: flex;
-}
-
-.footer {
-  padding: 50px 5%;
-}
-
-.emai-link {
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
 }
 
@@ -641,24 +515,7 @@ a {
   display: inline-block;
 }
 
-.submit-button-2 {
-  background-image: linear-gradient(#ff9e7f, #ff014a);
-  border-radius: 30px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 65px;
-  font-size: 18px;
-  display: block;
-}
 
-.submit-button-2.form {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 15px 40px;
-  font-size: 17px;
-  line-height: 1.2em;
-}
 
 .text-block-52 {
   font-weight: 700;
@@ -690,102 +547,19 @@ a {
   opacity: 1;
 }
 
-.form-contacts {
-  text-align: center;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.6em;
-}
 
-.error-message-2 {
-  text-align: center;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 17px;
-  line-height: 1.6em;
-}
 
-.close-popup {
-  z-index: 6;
-  transition: all .2s;
-  display: block;
-  position: absolute;
-  inset: 0;
-}
 
-.form-lb {
-  background-color: #fff;
-  border: 1px #000;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px 60px;
-  display: block;
-}
 
-.form-2 {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 
-.email-field {
-  text-align: left;
-  border-radius: 5px;
-  height: 50px;
-  margin-bottom: 20px;
-  font-size: 17px;
-}
 
-.details-field {
-  text-align: left;
-  border-radius: 5px;
-  min-height: 100px;
-  max-height: 100px;
-  font-size: 17px;
-}
 
-.form-text {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.6em;
-}
 
-.success-message-3 {
-  background-color: #0000;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.form-box {
-  z-index: 10;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  display: block;
-  position: relative;
-  top: 20%;
-}
 
-.form-contact-link {
-  color: #1d1d1d;
-  text-decoration: underline;
-  transition: all .2s;
-}
 
-.form-contact-link:hover {
-  color: red;
-}
+
+
 
 .text-block-53 {
   font-size: 24px;
@@ -1113,25 +887,9 @@ a {
   display: flex;
 }
 
-.footer-link {
-  opacity: 1;
-  color: #008eaf;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  opacity: 1;
-  color: #000;
-}
-
 .footer-link.small {
-  font-size: 13px;
-  line-height: 15px;
-  text-decoration: underline;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .small-text {
@@ -1166,15 +924,6 @@ html.w-mod-js [data-ix="fade-in"] {
 
   .store-btn.mb0.gp, .store-btn.mb0.gp-en, .store-btn.mb0.gp-pl {
     margin-right: 0;
-  }
-
-  .footer {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-  .emai-link {
-    flex-wrap: nowrap;
   }
 
   .submit-button-2.form {
@@ -1213,9 +962,6 @@ html.w-mod-js [data-ix="fade-in"] {
     display: flex;
   }
 
-  .footer-link {
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1244,29 +990,7 @@ html.w-mod-js [data-ix="fade-in"] {
     margin-bottom: 16px;
   }
 
-  .footer {
-    padding-top: 0;
-  }
 
-  .emai-link {
-    flex-direction: column;
-  }
-
-  .submit-button-2.form {
-    font-size: 17px;
-  }
-
-  .error-message-2 {
-    font-size: 16px;
-  }
-
-  .form-lb {
-    padding: 40px;
-  }
-
-  .form-box {
-    width: 80%;
-  }
 
   .blog-content {
     margin-top: 0;
@@ -1437,10 +1161,6 @@ html.w-mod-js [data-ix="fade-in"] {
     line-height: 24px;
   }
 
-  .footer-link {
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1457,11 +1177,6 @@ html.w-mod-js [data-ix="fade-in"] {
   .main {
     font-size: 16px;
     line-height: 21px;
-  }
-
-  .content {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .cta {
@@ -1560,39 +1275,7 @@ html.w-mod-js [data-ix="fade-in"] {
     font-size: 20px;
   }
 
-  .feedback-form-button {
-    width: 100%;
-    height: 42px;
-    padding-top: 7px;
-    font-size: 14px;
-  }
 
-  .feedback-form-button.blog-pagination {
-    padding-top: 11px;
-    font-size: 16px;
-  }
-
-  .feedback-input {
-    max-width: 100%;
-    height: 40px;
-    padding-top: 8px;
-    font-size: 14px;
-  }
-
-  .feedback-input::placeholder {
-    font-size: 14px;
-  }
-
-  .feedback-textarea {
-    max-width: 100%;
-    height: 40px;
-    padding-top: 8px;
-    font-size: 14px;
-  }
-
-  .feedback-textarea::placeholder {
-    font-size: 14px;
-  }
 
   .feedback-form-text {
     max-width: 80%;
@@ -1614,23 +1297,6 @@ html.w-mod-js [data-ix="fade-in"] {
 
   .mailto {
     margin-top: 30px;
-  }
-
-  .submit-button-2.form, .form-contacts {
-    font-size: 16px;
-  }
-
-  .form-lb {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .email-field, .details-field, .form-text {
-    font-size: 16px;
-  }
-
-  .form-box {
-    width: 90%;
   }
 
   .blog-heading {

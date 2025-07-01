@@ -1,0 +1,41 @@
+// Main footer container
+.footer {
+  padding: 2em 0;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 1em;
+}
+
+// Footer links container
+.footer-links {
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+// Small text (copyright info)
+.copyright-text {
+  color: #9b9b9b;
+  font-size: .75em;
+  line-height: 1.5em;
+}
+
+// Responsive design for footer
+@media screen and (max-width: 720px) {
+  
+    .footer-content {
+        gap: 2em;
+    }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

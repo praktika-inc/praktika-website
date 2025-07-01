@@ -459,63 +459,6 @@ a {
 
 
 
-.footer-links {
-  align-items: center;
-  justify-content: center;
-  gap: 3.75em;
-}
-
-.social-link {
-  opacity: .5;
-  width: 32px;
-  height: 32px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.social-link:hover {
-  opacity: 1;
-}
-
-.social-link.en {
-  display: none;
-}
-
-.social-links {
-  justify-content: center;
-  display: flex;
-}
-
-.text-link {
-  opacity: .5;
-  color: #9b9b9b;
-  text-decoration: none;
-}
-
-.text-link:hover {
-  opacity: 1;
-}
-
-.text-link.small {
-  font-size: 13px;
-  line-height: 15px;
-  text-decoration: underline;
-}
-
-.legal-info {
-  opacity: .5;
-  color: #9b9b9b;
-  margin-top: 20px;
-  font-size: 13px;
-  line-height: 140%;
-}
-
-.link {
-  text-align: left;
-  display: inline-block;
-}
-
-
 
 .text-block-52 {
   font-weight: 700;
@@ -885,29 +828,6 @@ a {
   justify-content: space-between;
   align-items: center;
   display: flex;
-}
-
-.footer-link.small {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.small-text {
-  opacity: .5;
-  color: #9b9b9b;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-}
-
-.small-text:hover {
-  opacity: 1;
-}
-
-.small-text.small {
-  font-size: 13px;
-  line-height: 15px;
-  text-decoration: underline;
 }
 
 html.w-mod-js [data-ix="fade-in"] {

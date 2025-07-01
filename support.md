@@ -2,7 +2,6 @@
 layout: default
 title: "Help & Support"
 description: "Send us a message and we'll help with any issue - Contact Praktika support team"
-body_class: "main"
 ---
 
 <div class="main">

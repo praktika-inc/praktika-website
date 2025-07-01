@@ -2,9 +2,7 @@
 layout: default
 title: "Wsparcie techniczne"
 description: "Gdzie napisać, żeby wszystko było dobrze - Kontakt z zespołem Praktika"
-lang: pl
 permalink: /pl/support/
-body_class: "main"
 ---
 
 <div class="main">

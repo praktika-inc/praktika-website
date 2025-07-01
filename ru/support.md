@@ -2,9 +2,7 @@
 layout: default
 title: "Контакты и техподдержка"
 description: "Куда написать, чтобы всё стало хорошо - Контакт с командой Praktika"
-lang: ru
 permalink: /ru/support/
-body_class: "main"
 ---
 
 <div class="main">

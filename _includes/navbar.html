@@ -30,6 +30,11 @@
     <!-- Navigation Menu -->
     <nav class="nav-menu flex">
       <div class="menu-row flex">
+        {% if site.active_lang == 'ru' %}
+        <a
+          href="{{ '/blog/' | relative_url }}"
+          class="nav-link">{% t nav.blog %}</a>
+        {% endif %}
         <a
           href="https://www.instagram.com/practico.world/"
           target="_blank"

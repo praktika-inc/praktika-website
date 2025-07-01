@@ -58,64 +58,10 @@ a {
   line-height: 24px;
 }
 
-.first-screen-wrapper {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-// Main page layout
-.main-row {
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 59px;
-  display: flex;
-}
-
-.phone-img {
-  max-width: none;
-  margin-bottom: -54px;
-  margin-left: -46px;
-}
-
-.main-info {
-  text-align: left;
-  margin-left: 20px;
-  padding-top: 79px;
-}
-
 .main-col2 {
   flex-direction: column;
   align-items: flex-start;
   display: flex;
-}
-
-.h1 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 29px;
-  font-weight: 300;
-  line-height: 34px;
-}
-
-.main-par {
-  align-items: flex-start;
-  margin-bottom: 0;
-  font-size: 19px;
-  line-height: 30px;
-  display: flex;
-}
-
-.main-list {
-  margin-bottom: 51px;
-}
-
-.li-mark {
-  flex: none;
-  margin-right: 5px;
-}
-
-.li-text {
-  flex: 1;
 }
 
 // Store button styles
@@ -281,17 +227,9 @@ a {
 }
 
 // Layout helpers
-.main-image {
-  flex: none;
-}
 
 .mobile-block {
   display: none;
-}
-
-.mob-row {
-  align-self: stretch;
-  display: flex;
 }
 
 .bh_ic {
@@ -345,13 +283,7 @@ a {
     font-size: 16px;
   }
 
-  .phone-img {
-    width: 275px;
-    margin-bottom: -23px;
-    margin-left: -53px;
-  }
-
-  .main-info {
+  .hero-text {
     margin-left: -4px;
     padding-top: 43px;
   }
@@ -428,49 +360,9 @@ a {
     flex-wrap: nowrap;
   }
 
-  .main-row {
-    margin-bottom: -10px;
-    padding-top: 15px;
-  }
-
-  .phone-img {
-    margin-top: -20px;
-    margin-left: -47px;
-    margin-right: -18px;
-  }
-
-  .main-info {
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    margin-left: 0;
-    padding-top: 0;
-    display: flex;
-  }
-
-  .h1 {
-    align-self: stretch;
-    margin-bottom: 30px;
-  }
-
-  .main-par {
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .main-image {
-    display: none;
-  }
-
   .mobile-block {
     flex: none;
     display: block;
-  }
-
-  .main-list {
-    margin-bottom: 26px;
-    padding-top: 38px;
   }
 
   .bh_ic {
@@ -481,11 +373,6 @@ a {
 
   .bh_text {
     flex: 1;
-  }
-
-  .mob-row {
-    align-self: stretch;
-    display: flex;
   }
 
   .main-col2 {
@@ -550,42 +437,10 @@ a {
     margin-right: 0;
   }
 
-  .main-row {
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
-    display: block;
-  }
-
-  .phone-img {
-    width: 402px;
-    margin: -33px 0 -90px;
-  }
-
-  .main-info {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-  }
-
-  .h1 {
-    align-self: center;
-    width: 270px;
-    max-width: 100%;
-    margin-bottom: 42px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .main-list {
-    margin-bottom: 42px;
-    margin-left: 0;
-  }
-
-  .mob-row {
-    flex-direction: column;
-    align-items: center;
-  }
+.first-screen-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
   .main-col2 {
     display: block;

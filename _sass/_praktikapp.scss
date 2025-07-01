@@ -119,115 +119,24 @@ a {
 }
 
 // Store button styles
-.store-btn {
-  background-image: url('/assets/images/strbtn.svg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: 120px 40px;
-  width: 120px;
-  height: 40px;
-  margin-bottom: 8px;
+.store-buttons { gap: 1em; }
+
+.store-button {
+    height: 44px;
 }
 
-.store-btn:hover {
-  background-image: url('/assets/images/Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
+.store-button.app-store {
+  background-size: 128px 44px;
+  width: 128px;
+  background-image: url('/assets/images/as-button-en-l.svg');
+  &:hover { background-image: url('/assets/images/as-button-en-d.svg'); }
 }
 
-.store-btn.mb0 {
-  background-image: url('/assets/images/store-btn.svg');
-  background-size: contain;
-  width: 135px;
-  height: 45px;
-}
-
-.store-btn.mb0:hover { 
-  background-image: url('/assets/images/Download_on_the_App_Store_Badge_RU_RGB_blk_100317.svg'); 
-}
-
-.store-btn.mb0.gp {
-  background-image: url('/assets/images/5eea3d3c70981459035a6679_gp-btn-i-1.svg');
-  width: 152px;
-  display: block;
-}
-
-.store-btn.mb0.gp:hover { 
-  background-image: url('/assets/images/5eea3d3c70981459035a6679_gp-btn-i-2.svg'); 
-}
-
-.store-btn.mb0.gp.pl { 
-  display: block; 
-}
-
-.store-btn.mb0.post { 
-  margin-bottom: 0; 
-}
-
-.store-btn.mb0.post.appstore-btn { 
-  margin-right: 16px; 
-}
-
-.store-btn.mb0.post.android-btn {
-  background-image: url('/assets/images/5eea3d3c70981459035a6679_gp-btn-i-1.svg');
-  width: 148px;
-}
-
-.store-btn.mb0.post.android-btn:hover {
-  background-image: url('/assets/images/5eea3d3c70981459035a6679_gp-btn-i-2.svg');
-}
-
-.store-btn.mb0.pl {
-  background-image: url('/assets/images/Download_on_the_App_Store_Badge_PL_RGB_wht_100317.svg');
-}
-
-.store-btn.mb0.pl:hover {
-  background-image: url('/assets/images/Download_on_the_App_Store_Badge_PL_RGB_wht_100317-1.svg');
-}
-
-.store-btn.mb0.en {
-  background-image: url('/assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg');
-}
-
-.store-btn.mb0.en:hover {
-  background-image: url('/assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg');
-}
-
-.store-btn.mb0.gp-en {
-  background-image: url('/assets/images/button-en.svg');
-  width: 152px;
-  display: block;
-}
-
-.store-btn.mb0.gp-en:hover {
-  background-image: url('/assets/images/button-en-hover.svg');
-}
-
-.store-btn.mb0.gp-en.pl {
-  display: block;
-}
-
-.store-btn.mb0.gp-pl {
-  background-image: url('/assets/images/button-pl.svg');
-  width: 152px;
-  display: block;
-}
-
-.store-btn.mb0.gp-pl:hover {
-  background-image: url('/assets/images/button-pl-hover.svg');
-}
-
-.store-btn.mb0.gp-pl.pl {
-  display: block;
-}
-
-.store-btn-block {
-  justify-content: space-between;
-  align-items: center;
-  max-width: 303px;
-  display: flex;
+.store-button.google-play {
+  background-size: 144px 44px;
+  width: 144px;
+  background-image: url('/assets/images/gp-button-en-l.svg');
+  &:hover { background-image: url('/assets/images/gp-button-en-d.svg'); }
 }
 
 // Support page
@@ -431,9 +340,6 @@ a {
 
 // RESPONSIVE STYLES
 @media screen and (max-width: 991px) {
-  .store-btn.mb0.gp, .store-btn.mb0.gp-en, .store-btn.mb0.gp-pl {
-    margin-right: 0;
-  }
 
   .blog-name.post {
     font-size: 16px;
@@ -472,10 +378,6 @@ a {
 
   .first-screen-wrapper {
     padding-top: 32px;
-  }
-
-  .store-btn.mb0 {
-    margin-bottom: 16px;
   }
 
   .blog-content {
@@ -557,11 +459,6 @@ a {
     line-height: 20px;
   }
 
-  .store-btn-block {
-    flex-flow: wrap;
-    width: 100%;
-  }
-
   .main-image {
     display: none;
   }
@@ -624,23 +521,6 @@ a {
   .main {
     font-size: 16px;
     line-height: 21px;
-  }
-
-  .store-btn {
-    margin-bottom: 10px;
-  }
-
-  .store-btn.mb0.post.appstore-btn {
-    margin-bottom: 16px;
-    margin-right: 0;
-  }
-
-  .store-btn.mb0.gp-pl {
-    background-image: url('/assets/images/button-pl.svg');
-  }
-
-  .store-btn.mb0.gp-pl:hover {
-    background-image: url('/assets/images/button-pl-hover.svg');
   }
 
   .blog-heading {

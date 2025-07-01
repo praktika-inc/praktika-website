@@ -17,10 +17,7 @@ description: "A non-esoteric meditation app. Your personal mindfulness guide who
           <p class="main-par"><span class="li-mark">—</span> <span class="li-text">Short lessons perfect for busy people</span></p>
           <p class="main-par"><span class="li-mark">—</span> <span class="li-text">Soothing voice and high-quality audio</span></p>
         </div>
-        <div class="store-btn-block">
-          <a id="button-top" href="https://apps.apple.com/ru/app/meditation-sleep-praktika/id1467786415?l=en" target="_blank" class="store-btn mb0 en w-inline-block"></a>
-          <a id="button-top" href="https://play.google.com/store/apps/details?id=com.praktika.app" target="_blank" class="store-btn mb0 gp-en w-inline-block"></a>
-        </div>
+{% include store-buttons.html %}
       </div>
     </div>
   </div>

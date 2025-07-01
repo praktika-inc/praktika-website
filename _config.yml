@@ -21,7 +21,6 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-paginate-v2 # https://github.com/sverrirs/jekyll-paginate-v2
   - jekyll-loading-lazy # https://github.com/gildesmarais/jekyll-loading-lazy 
   - jekyll-multiple-languages-plugin # https://github.com/kurtsson/jekyll-multiple-languages-plugin

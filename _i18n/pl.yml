@@ -1,5 +1,5 @@
 global:
-  logo:
+  logo: logo.svg
 nav:
   ig: Instagram
   fb: Facebook
@@ -14,9 +14,4 @@ hero:
   i2: Poprawi sen i zmniejszy stres
   i3: Krótkie lekcje w języku polskim
   i4: Przyjemny głos i relaksująca muzyka
-  img:
-buttons:
-  as-l:
-  as-d:
-  gp-l:
-  gp-d:
+  img: hero-phone-pl.png

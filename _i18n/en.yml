@@ -1,5 +1,5 @@
 global:
-  logo:
+  logo: logo.svg
 nav:
   ig: Instagram
   fb: Facebook
@@ -14,9 +14,4 @@ hero:
   i2: Improve your sleep and reduce anxiety
   i3: Short lessons perfect for busy people
   i4: Soothing voice and high-quality audio
-  img:
-buttons:
-  as-l:
-  as-d:
-  gp-l:
-  gp-d:
+  img: hero-phone-en.png

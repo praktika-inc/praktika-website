@@ -1,5 +1,5 @@
 global:
-  logo:
+  logo: logo-ru.svg
 nav:
   ig: Инстаграм
   fb: Фейсбук
@@ -14,9 +14,4 @@ hero:
   i2: Поможет улучшить сон и снизить стресс
   i3: Идеально короткие уроки для занятых
   i4: Топовое качество от лучших гидов
-  img:
-buttons:
-  as-l:
-  as-d:
-  gp-l:
-  gp-d:
+  img: hero-phone-ru.png

@@ -1,0 +1,22 @@
+global:
+  logo:
+nav:
+  ig: Instagram
+  fb: Facebook
+  email: Email
+  contact: Napisz do nas
+  blog: Blog
+  license: Umowa
+  privacy: Prywatność
+hero:
+  h1: Apka do medytacji<br>bez mistycyzmu i ezoteriki
+  i1: Bezpłatny 10-dniowy kurs medytacji
+  i2: Poprawi sen i zmniejszy stres
+  i3: Krótkie lekcje w języku polskim
+  i4: Przyjemny głos i relaksująca muzyka
+  img:
+buttons:
+  as-l:
+  as-d:
+  gp-l:
+  gp-d:

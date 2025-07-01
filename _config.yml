@@ -1,8 +1,19 @@
 title: "Practico — Meditation & Sleep"
+email: hi@praktika.app
 description: "A non-esoteric meditation app. Your personal mindfulness guide who's always there. Helps you cope with stress, improve your sleep, and increase productivity."
+domain: praktika.app
 baseurl: ""
-url: ""
-lang: ru
+url: "https://praktika.app"
+
+# Sass/SCSS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Localization settings
+languages: ["en", "pl", "ru"]
+exclude_from_localizations: ["javascript", "js", "images", "css", "assets"]
+default_locale_in_subfolder: false
 
 # Build settings
 markdown: kramdown
@@ -11,6 +22,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate-v2 # https://github.com/sverrirs/jekyll-paginate-v2
+  - jekyll-loading-lazy # https://github.com/gildesmarais/jekyll-loading-lazy 
+  - jekyll-multiple-languages-plugin # https://github.com/kurtsson/jekyll-multiple-languages-plugin
+  - jekyll-target-blank #https://github.com/keithmifsud/jekyll-target-blank
 
 # Collections
 collections:

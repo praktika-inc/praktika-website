@@ -13,7 +13,7 @@ March 10, 2022
 
 1.1. The present public offer agreement assigns the following meanings to the terms below unless the context requires otherwise:
 
-1.1.1. "Offer" - this document, the proposal of the Copyright holder to conclude an Agreement based on the terms in the Offer, available at: [](http://praktika.app/">http://praktika.app‍).
+1.1.1. "Offer" - this document, the proposal of the Copyright holder to conclude an Agreement based on the terms in the Offer, available at: [https://praktika.app](https://praktika.app).
 
 1.1.2. "Acceptance" - full and unconditional acceptance of the Offer by the User to perform the actions specified in Clause 2.2 of the Offer.
 

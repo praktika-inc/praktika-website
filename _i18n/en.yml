@@ -1,0 +1,22 @@
+global:
+  logo:
+nav:
+  ig: Instagram
+  fb: Facebook
+  email: Email
+  contact: Contact Us
+  blog: Blog
+  license: License Agreement
+  privacy: Privacy Policy
+hero:
+  h1: Your Personal<br>Meditation Guide
+  i1: Dozens of meditations for every occasion
+  i2: Improve your sleep and reduce anxiety
+  i3: Short lessons perfect for busy people
+  i4: Soothing voice and high-quality audio
+  img:
+buttons:
+  as-l:
+  as-d:
+  gp-l:
+  gp-d:

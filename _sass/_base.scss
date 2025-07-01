@@ -191,27 +191,7 @@ ul, ol {
 
 // CONTENT COMPONENTS
 
-// Rich text (used for blog posts)
-.w-richtext:before,
-.w-richtext:after {
-  content: " ";
-  display: table;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-column-end: 2;
-  grid-row-end: 2;
-}
-
-.w-richtext:after {
-  clear: both;
-}
-
-.w-richtext ol,
-.w-richtext ul {
-  overflow: hidden;
-}
-
-// Dynamic content (used for blog)
+// Dynamic content utility
 .w-dyn-empty {
   padding: 10px;
   background-color: $light-color;

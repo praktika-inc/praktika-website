@@ -1,18 +1,10 @@
 // Blog styles
-.blog-content {
-  max-width: 1032px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .blog-heading {
   text-align: center;
-  max-width: 1032px;
-  margin: 0 auto 52px;
-  font-family: Roboto, sans-serif;
+  margin-bottom: 52px;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .blog-heading.post {
@@ -20,10 +12,6 @@
   max-width: 800px;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-.blog-h1 {
-  color: #333;
 }
 
 .bh_text {
@@ -46,7 +34,6 @@
 .blog-name {
   color: #333;
   margin-top: 16px;
-  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -62,11 +49,8 @@
   flex: 0 auto;
   order: -1;
   max-width: 30%;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .post-link {
@@ -121,6 +105,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
+  gap: 2em;
 }
 
 // Dynamic content styles (Webflow compatibility)
@@ -163,8 +148,6 @@
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .w-col-4 {
@@ -228,22 +211,78 @@
   background: linear-gradient(135deg, #6c757d, #868e96);
 }
 
-// Blog store section
-.store-button.blog {
-  max-width: 640px;
-  margin: 60px auto 100px;
+// Post store buttons
+.store-btn.mb0.post { 
+  margin-bottom: 0; 
+}
+
+.store-btn.mb0.post.appstore-btn { 
+  margin-right: 16px; 
+}
+
+.store-btn.mb0.post.android-btn {
+  background-image: url('/assets/images/gp-button-en-l.svg');
+  width: 148px;
+}
+
+.store-btn.mb0.post.android-btn:hover {
+  background-image: url('/assets/images/gp-button-en-d.svg');
+}
+
+// Blog store section in posts
+.blog-store-wrapper {
+  background-image: linear-gradient(#34afd0, #4adeba);
+  border-radius: 16px;
+  align-items: center;
+  padding: 24px 32px;
   display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
-.store-btn.mb0 {
-  display: inline-block;
-  margin-bottom: 0;
+.blog-store-text {
+  color: #fff;
+  max-width: 320px;
+  margin-right: 32px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.store-btn.mb0.gp {
-  margin-left: 20px;
+.blog-store-container {
+  max-width: 640px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.btn-container-blog {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.text-block-55 {
+  font-weight: 300;
+}
+
+// Rich text content (used for blog posts)
+.w-richtext:before,
+.w-richtext:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.w-richtext:after {
+  clear: both;
+}
+
+.w-richtext ol,
+.w-richtext ul {
+  overflow: hidden;
 }
 
 // RESPONSIVE STYLES
@@ -255,6 +294,16 @@
 
   .blog-name.post {
     font-size: 16px;
+  }
+
+  .blog-store-text {
+    margin-right: 32px;
+  }
+
+  .btn-container-blog {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
   }
 }
 
@@ -333,6 +382,23 @@
     width: 100%;
     justify-content: center;
   }
+
+  .blog-store-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 40px;
+  }
+
+  .blog-store-text {
+    text-align: center;
+    max-width: 360px;
+    margin-bottom: 24px;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -348,5 +414,26 @@
   .blog-heading {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .store-btn.mb0.post.appstore-btn {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+
+  .blog-store-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 32px 24px;
+  }
+
+  .blog-store-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .btn-container-blog {
+    flex-direction: column;
+    align-items: center;
   }
 }

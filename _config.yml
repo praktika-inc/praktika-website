@@ -34,6 +34,15 @@ plugins:
   - jekyll-multiple-languages-plugin # https://github.com/kurtsson/jekyll-multiple-languages-plugin
   - jekyll-target-blank #https://github.com/keithmifsud/jekyll-target-blank
 
+# Pagination configuration
+pagination:
+  enabled: true
+  per_page: 9
+  permalink: '/page:num/'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 # Posts defaults
 defaults:
   - scope:

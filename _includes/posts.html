@@ -1,6 +1,6 @@
 <h1 class="blog-heading">Полезные посты о ментальном здоровье</h1>
 <ul class="blog-posts flex">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     <li class="post-card">
       <a href="{{ post.url | relative_url }}" class="post-link flex">
         {% if post.image %}

@@ -1,54 +1,35 @@
-<div class="blog-content">
-  <h1 class="blog-heading blog-h1">Блог о медитации без эзотерики</h1>
-  <div class="w-dyn-list">
-    <div role="list" class="collection-list w-dyn-items w-row">
-      {% for post in site.posts limit: 9 %}
-        <div role="listitem" class="post-card w-dyn-item w-col w-col-4">
-          <a href="{{ post.url | relative_url }}" class="post-link w-inline-block">
-            {% if post.image %}
-              <div class="blog-preview" style="background-image: url('{{ site.url }}{{ post.image }}')"></div>
-            {% else %}
-              <div class="blog-preview"></div>
-            {% endif %}
-            <h2 class="blog-name">{{ post.title }}</h2>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
+<h1 class="blog-heading">Полезные посты о ментальном здоровье</h1>
+<ul class="blog-posts flex">
+  {% for post in site.posts limit: 9 %}
+    <li class="post-card">
+      <a href="{{ post.url | relative_url }}" class="post-link flex">
+        {% if post.image %}
+          <div class="post-thumbnail" style="background-image: url('{{ site.url }}{{ post.image }}')"></div>
+        {% else %}
+          <div class="post-thumbnail"></div>
+        {% endif %}
+        <h2 class="post-title">{{ post.title }}</h2>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 
-    {% if site.posts.size == 0 %}
-      <div class="w-dyn-empty">
-        <div>Нет постов.</div>
-      </div>
-    {% endif %}
-    <div
-      role="navigation"
-      aria-label="List"
-      class="w-pagination-wrapper pagination">
-      <a
-        href="#"
-        aria-label="Previous Page"
-        class="w-pagination-previous feedback-form-button blog-pagination back">
-        <div class="w-inline-block">Назад</div>
-      </a>
-      <a
-        href="#"
-        aria-label="Next Page"
-        class="w-pagination-next feedback-form-button blog-pagination">
-        <div class="w-inline-block">Листать дальше</div>
-      </a>
-    </div>
-  </div>
-  <div class="store-button blog" data-ix="fade-in">
-    <a
-      id="button-top"
-      href="https://apps.apple.com/ru/app/практика-медитация-и-сон/id1467786415"
-      target="_blank"
-      class="store-btn mb0 w-inline-block"></a>
-    <a
-      id="button-top"
-      href="https://play.google.com/store/apps/details?id=com.praktika.app"
-      target="_blank"
-      class="store-btn mb0 gp w-inline-block"></a>
-  </div>
+<div
+  role="navigation"
+  aria-label="List"
+  class="pagination flex">
+  <a
+    href="#"
+    aria-label="Предыдущая страница"
+    class="pagination-button">
+    ← Назад
+  </a>
+  <a
+    href="#"
+    aria-label="Следующая страница"
+    class="pagination-button">
+    Дальше →
+  </a>
 </div>
+
+{% include store-banner.html %}

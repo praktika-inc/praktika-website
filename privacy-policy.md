@@ -6,3 +6,5 @@ description: "Praktika Privacy Policy - How we collect, use, and protect your pe
 ---
 
 {% tf privacy-policy/privacy-policy.md %}
+
+{% include store-banner.html %}

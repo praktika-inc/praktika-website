@@ -284,7 +284,7 @@ a {
   margin-bottom: 40px;
 }
 
-.blog-preview {
+.post-image {
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -293,11 +293,11 @@ a {
   padding-top: 100%;
 }
 
-.blog-preview.post {
+.post-image.post {
   height: 120px;
 }
 
-.blog-name {
+.post-title {
   color: #333;
   margin-top: 16px;
   font-family: Roboto, sans-serif;
@@ -307,7 +307,7 @@ a {
   text-decoration: none;
 }
 
-.blog-name.post {
+.post-title.post {
   font-size: 18px;
   line-height: 24px;
 }
@@ -441,7 +441,7 @@ a {
     margin-right: 0;
   }
 
-  .blog-name.post {
+  .post-title.post {
     font-size: 16px;
   }
 
@@ -499,7 +499,7 @@ a {
     margin-top: 0;
   }
 
-  .blog-name {
+  .post-title {
     margin-top: 10px;
     margin-bottom: 0;
   }
@@ -654,7 +654,7 @@ a {
     line-height: 24px;
   }
 
-  .blog-name.post {
+  .post-title.post {
     text-align: left;
     font-size: 20px;
     line-height: 28px;

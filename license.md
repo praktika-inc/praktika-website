@@ -6,3 +6,5 @@ description: "Public Offer Agreement for Praktika meditation app - Terms and con
 ---
 
 {% tf license/license.md %}
+
+{% include store-banner.html %}

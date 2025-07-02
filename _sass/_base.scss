@@ -5,6 +5,9 @@ $black-color: #333;
 $grey-color: #9b9b9b;
 $light-color: #eee;
 
+// Brand Gradients
+$turquois-gradient: linear-gradient(#34afd0, #4adeba);
+
 // Responsive Breakpoints
 $mobile-max: 720px;
 
@@ -16,6 +19,21 @@ $mobile-max: 720px;
   background-size: #{$width}px 44px;
   background-image: url($bg-light);
   &:hover { background-image: url($bg-dark); }
+}
+
+$heading-styles: (
+  h1: (font-size: 2em, line-height: 1.2, margin-top: 2em, margin-bottom: 1em),
+  h2: (font-size: 1.5em, line-height: 1.25, margin-top: 1.5em, margin-bottom: .75em),
+  h3: (font-size: 1.25em, line-height: 1.3, margin-top: 1.25em, margin-bottom: .5em),
+  h4: (font-size: 1.125em, line-height: 1.4, margin-top: 1em, margin-bottom: .5em)
+);
+
+@each $heading, $styles in $heading-styles {
+  #{$heading} {
+    @each $property, $value in $styles {
+      #{$property}: $value;
+    }
+  }
 }
 
 // Base styles and normalization
@@ -85,12 +103,11 @@ html.w-mod-touch * {
 // Layout utilities
 
 .content {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-// Display utilities
-.w-inline-block {
+.inline-block {
   max-width: 100%;
   display: inline-block;
 }
@@ -99,103 +116,9 @@ html.w-mod-touch * {
 
 // TYPOGRAPHY
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
-h1 {
-  font-size: 2em; /* normalize default */
-  margin: 0.67em 0; /* normalize default */
-  
-  /* Our custom overrides when needed */
-  @at-root .hero-cta h1 {
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 1.125;
-    width: 100%;
-    margin: 0;
-  }
-}
-
-h2 {
-  font-size: 32px;
-  line-height: 36px;
-  margin-top: 20px;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 30px;
-  margin-top: 20px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-ul, ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
-
-// GRID SYSTEM
-
-.w-row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.w-row:before,
-.w-row:after {
-  content: " ";
-  display: table;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-column-end: 2;
-  grid-row-end: 2;
-}
-
-.w-row:after {
-  clear: both;
-}
-
-.w-col {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.w-col-4 {
-  width: 33.33333333%;
-}
-
-// Responsive grid adjustments
-@include mobile {
-  .w-row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .w-col {
-    width: 100%;
-    left: auto;
-    right: auto;
-  }
-}
-
-// CONTENT COMPONENTS
-
-// Dynamic content utility
-.w-dyn-empty {
-  padding: 10px;
-  background-color: $light-color;
-}
+p, ul, ol { margin-bottom: .5em; }
 
 // STORE BUTTONS
 
@@ -207,4 +130,18 @@ ul, ol {
 
 .store-button.google-play {
   @include store-button(144, '/assets/images/gp-button-en-l.svg', '/assets/images/gp-button-en-d.svg');
+}
+
+.store-banner {
+  background: $turquois-gradient;
+  border-radius: 1em;
+  align-items: center;
+  padding: 24px 32px;
+  justify-content: space-between;
+  h3 {
+    color: $white-color;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+  }
 }

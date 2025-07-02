@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-
-<div class="content">
-  <h1 class="blog-heading post">{{ page.title }}</h1>
+<div class="blog-article">
+  <h1 class="blog-heading">{{ page.title }}</h1>
 
   {% if page.image %}
     <img
@@ -12,80 +11,26 @@ layout: default
       class="post-image">
   {% endif %}
 
-  <div class="post-body w-richtext">
+  <div class="post-body">
     {{ content }}
   </div>
 
-  <div class="blog-store-container">
-    <div class="blog-store-wrapper">
-      <div class="blog-store-text">
-        <div class="text-block-55">
-          {% if page.lang == 'ru' %}
-            Скачайте приложение Практика и медитируйте с нашим гидом.
-          {% elsif page.lang == 'pl' %}
-            Pobierz aplikację Praktika i medytuj z naszym przewodnikiem.
-          {% else %}
-            Download the Praktika app and meditate with our guide.
-          {% endif %}
-        </div>
-      </div>
-      <div class="btn-container-blog">
-        {% if page.lang == 'ru' %}
-          <a
-            id="button-top"
-            href="https://apps.apple.com/ru/app/практика-медитация-и-сон/id1467786415"
-            target="_blank"
-            class="store-btn mb0 post appstore-btn w-inline-block"></a>
-        {% elsif page.lang == 'pl' %}
-          <a
-            id="button-top"
-            href="https://apps.apple.com/pl/app/praktika-medytacja-i-sen/id1467786415"
-            target="_blank"
-            class="store-btn mb0 post appstore-btn w-inline-block"></a>
-        {% else %}
-          <a
-            id="button-top"
-            href="https://apps.apple.com/app/meditation-sleep-praktika/id1467786415"
-            target="_blank"
-            class="store-btn mb0 post appstore-btn w-inline-block"></a>
-        {% endif %}
-        <a
-          id="button-top"
-          href="https://play.google.com/store/apps/details?id=com.praktika.app"
-          target="_blank"
-          class="store-btn mb0 post android-btn w-inline-block"></a>
-      </div>
-    </div>
+  {% include store-banner.html %}
+  <div class="recent-posts">
+    <h1 class="blog-heading">Полезные посты о ментальном здоровье</h1>
+    <ul class="blog-posts flex">
+      {% for post in site.posts limit: 3 %}
+        <li class="post-card">
+          <a href="{{ post.url | relative_url }}" class="post-link flex">
+            {% if post.image %}
+              <div class="post-thumbnail" style="background-image: url('{{ site.url }}{{ post.image }}')"></div>
+            {% else %}
+              <div class="post-thumbnail"></div>
+            {% endif %}
+            <h2 class="post-title">{{ post.title }}</h2>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
-
-  {% if site.posts.size > 1 %}
-    <div class="post-articles">
-      <h3 class="articles-heading">
-        {% if page.lang == 'ru' %}
-          Другие полезные статьи
-        {% elsif page.lang == 'pl' %}
-          Inne przydatne artykuły
-        {% else %}
-          Other useful articles
-        {% endif %}
-      </h3>
-      <div class="collection-list post w-row">
-        {% assign related_posts = site.posts | where: "lang", page.lang | limit: 3 %}
-        {% for post in related_posts %}
-          {% unless post.url == page.url %}
-            <div class="post-card post w-col w-col-4">
-              <a href="{{ post.url | relative_url }}" class="post-link w-inline-block">
-                {% if post.image %}
-                  <div class="blog-preview" style="background-image: url('{{ post.image | relative_url }}')"></div>
-                {% else %}
-                  <div class="blog-preview"></div>
-                {% endif %}
-                <h2 class="blog-name post">{{ post.title }}</h2>
-              </a>
-            </div>
-          {% endunless %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
 </div>

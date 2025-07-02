@@ -138,6 +138,9 @@ p, ul, ol { margin-bottom: .5em; }
   align-items: center;
   padding: 24px 32px;
   justify-content: space-between;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
   h3 {
     color: $white-color;
     font-size: 1em;

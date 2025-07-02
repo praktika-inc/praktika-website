@@ -80,7 +80,7 @@ a {
   text-decoration: none;
 
   &:active, &:hover { outline: 0; }
-  &:hover, &.current { color: $black-color; }
+  &:hover { color: $black-color; }
 }
 
 input {

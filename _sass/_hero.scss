@@ -1,13 +1,13 @@
-// Main hero section layout
 .hero-section {
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 3em;
 }
 
 .phone-img {
   max-width: none;
-  margin-bottom: -52px;
-  margin-left: -52px;
+  margin-bottom: -4em;
+  margin-left: -4em;
 }
 
 .hero-cta {
@@ -24,40 +24,31 @@
 }
 
 .hero-list {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0;
 
-.hero-list-item {
+  li {
   font-size: 1.25em;
-  line-height: 1.6;
+  line-height: 1.75;
   list-style: "—  ";
+  }
 }
 
-.li-text {
-  margin-left: .25em;
-  flex: 1;
-}
-
-// Responsive Styles
 @include mobile {
   .hero-section {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1.5em;
   }
 
-  .phone-img {
-    margin-bottom: -2em;
+  .phone-img { 
     margin-left: 0;
+    margin-bottom: -2em;
   }
 
-  .hero-cta {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 0;
-  }
+  .hero-cta { padding: 0; }
   
-  .hero-list-item {
+  .hero-list li {
     font-size: 1em;
     margin-bottom: .5em;
   }

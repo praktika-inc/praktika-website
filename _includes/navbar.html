@@ -2,16 +2,8 @@
   <div class="navbar-content flex">
 
     <div class="navbar-logo">
-      <a
-        href="{{ '/' | relative_url }}"
-        {% if page.url == '/' %}
-        aria-current="page"
-        {% endif %}
-        class="logo-link{% if page.url == '/' %} current{% endif %}">
-        <img
-          src="{{ '/assets/images/logo.svg' | prepend: site.baseurl_root }}"
-          alt="Praktika Logo"
-          class="logo-img">
+      <a href="{{ '/' | relative_url }}" class="inline-block">
+        <img src="{{ '/assets/images/logo.svg' | prepend: site.baseurl_root }}" alt="Praktika Logo">
       </a>
     </div>
 
@@ -22,29 +14,25 @@
       class="burger-toggle"
       aria-label="Toggle mobile menu">
     <label for="burger-toggle" class="burger-button">
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </label>
 
     <!-- Navigation Menu -->
     <nav class="nav-menu flex">
-      <div class="menu-row flex">
-        {% if site.active_lang == 'ru' %}
-          <a href="{{ '/blog/' | relative_url }}" class="nav-link">{% t nav.blog %}</a>
-        {% endif %}
-        <a
-          href="https://www.instagram.com/practico.world/"
-          target="_blank"
-          rel="noopener"
-          class="nav-link">{% t nav.ig %}</a>
-        <a
-          href="https://www.facebook.com/practico.world/"
-          target="_blank"
-          rel="noopener"
-          class="nav-link">{% t nav.fb %}</a>
-        <a href="mailto:hi@praktika.app?subject=Support%20request" class="nav-link">{% t nav.email %}</a>
-      </div>
+      {% if site.lang == 'ru' %}
+        <a href="{{ '/blog/' | relative_url }}">{% t nav.blog %}</a>
+      {% endif %}
+      <a
+        href="https://www.instagram.com/practico.world/"
+        target="_blank"
+        rel="noopener">{% t nav.ig %}</a>
+      <a
+        href="https://www.facebook.com/practico.world/"
+        target="_blank"
+        rel="noopener">{% t nav.fb %}</a>
+      <a href="mailto:hi@praktika.app?subject=Support%20request">{% t nav.email %}</a>
     </nav>
   </div>
 </header>

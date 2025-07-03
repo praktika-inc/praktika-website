@@ -1,3 +1,41 @@
+// Hero section styles
+
+.hero-section {
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 3em;
+}
+
+.phone-img {
+  max-width: none;
+  margin-bottom: -4em;
+  margin-left: -4em;
+}
+
+.hero-cta {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 5em;
+  
+  h1 {
+  line-height: 1.125;
+  width: 100%;
+  margin: 0;
+  }
+}
+
+.hero-list {
+  padding: 0;
+  margin: 0;
+
+  li {
+  font-size: 1.25em;
+  line-height: 1.75;
+  list-style: "—  ";
+  }
+}
+
 // Blog page
 
 .blog-heading { margin-bottom: 1.5em; }
@@ -90,36 +128,35 @@
 
 // RESPONSIVE STYLES
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5em;
+  }
+
+  .phone-img { 
+    margin-left: 0;
+    margin-bottom: -2em;
+  }
+
+  .hero-cta { padding: 0; }
+  
+  .hero-list li {
+    font-size: 1em;
+    margin-bottom: .5em;
+  }
+
+  .blog-posts {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .post-card {
-    width: 48%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 512px;
     margin-left: 0%;
     margin-right: 0%;
-  }
-
-  .w-pagination-wrapper {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .pagination {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .w-pagination-previous,
-  .w-pagination-next {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .post-card {
-    width: 100%;
-    max-width: 100%;
   }
 }

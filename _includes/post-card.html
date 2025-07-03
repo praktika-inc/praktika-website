@@ -1,0 +1,11 @@
+
+    <li class="post-card">
+      <a href="{{ post.url | relative_url }}" class="post-link flex">
+        {% if post.image %}
+          <div class="post-thumbnail" style="background-image: url('{{ post.image | prepend: site.baseurl_root }}')"></div>
+        {% else %}
+          <div class="post-thumbnail"></div>
+        {% endif %}
+        <h2 class="post-title">{{ post.title }}</h2>
+      </a>
+    </li>

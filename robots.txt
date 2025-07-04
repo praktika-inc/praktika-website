@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: https://praktika.app/sitemap.xml
+Sitemap: https://praktika.app/pl/sitemap.xml
+Sitemap: https://praktika.app/ru/sitemap.xml
+
+# Allow important assets
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/style.css

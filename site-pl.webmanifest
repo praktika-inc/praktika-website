@@ -1,0 +1,42 @@
+{
+  "name": "Practico — Medytacja i Sen",
+  "short_name": "Practico",
+  "description": "Aplikacja do medytacji w języku polskim. Pomoże poradzić sobie ze stresem, poprawi sen i produktywność. Darmowy kurs i krótkie sesje trwające 10 minut bez ezoteryki.",
+  "start_url": "/pl/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "lang": "pl",
+  "icons": [
+    {
+      "src": "/assets/icon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

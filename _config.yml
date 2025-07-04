@@ -12,7 +12,7 @@ sass:
 
 # Localization settings
 languages: ["en", "pl", "ru"]
-exclude_from_localizations: ["javascript", "js", "images", "css", "assets"]
+exclude_from_localizations: ["javascript", "js", "images", "css", "assets", "site.webmanifest"]
 default_locale_in_subfolder: false
 
 # Build settings

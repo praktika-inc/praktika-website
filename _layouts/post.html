@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: blog
 ---
-<div class="blog-article">
-  <h1 class="blog-heading">{{ page.title }}</h1>
+
+<div class="rich-text">
 
   {% if page.image %}
     <img
@@ -11,14 +11,10 @@ layout: default
       class="post-image">
   {% endif %}
 
-  <div class="post-body">
-    {{ content }}
-  </div>
-
-  {% include store-banner.html %}
+  {{ content }}
 
   <div class="recent-posts">
-    <h1 class="blog-heading">Полезные посты о ментальном здоровье</h1>
+    <h1 class="content-heading">Свежие посты</h1>
     <ul class="blog-posts flex">
       {% for post in site.posts limit: 3 %}
         {% include post-card.html %}

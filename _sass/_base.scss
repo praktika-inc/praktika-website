@@ -137,14 +137,27 @@ p, ul, ol { margin-bottom: .5em; }
   border-radius: 1em;
   align-items: center;
   padding: 24px 32px;
-  justify-content: space-between;
-  max-width: 640px;
+  gap: 1.5em;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
   h3 {
     color: $white-color;
-    font-size: 1em;
+    font-size: 1.125em;
+    line-height: 1.4;
     font-weight: 400;
     margin: 0;
   }
+}
+
+// Mobile styles
+
+@include mobile {
+
+  .store-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+  }
+
 }

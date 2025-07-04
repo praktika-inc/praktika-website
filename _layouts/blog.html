@@ -1,35 +1,9 @@
 ---
 layout: default
 ---
-<h1 class="blog-heading">Полезные посты о ментальном здоровье</h1>
-<ul class="blog-posts flex">
-  {% for post in paginator.posts %}
-    {% include post-card.html %}
-  {% endfor %}
-</ul>
 
-{% if paginator.total_pages > 1 %}
-<div
-  role="navigation"
-  aria-label="List"
-  class="pagination flex">
-  {% if paginator.previous_page %}
-    <a
-      href="{{ paginator.previous_page_path | relative_url }}"
-      aria-label="Предыдущая страница"
-      class="pagination-button">
-      ← Назад
-    </a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a
-      href="{{ paginator.next_page_path | relative_url }}"
-      aria-label="Следующая страница"
-      class="pagination-button">
-      Дальше →
-    </a>
-  {% endif %}
-</div>
-{% endif %}
+<h1 class="content-heading">{{ page.title }}</h1>
+
+{{ content }}
 
 {% include store-banner.html %}

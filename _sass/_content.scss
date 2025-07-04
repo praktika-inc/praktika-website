@@ -38,7 +38,11 @@
 
 // Blog page
 
-.blog-heading { margin-bottom: 1.5em; }
+.content-heading {
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
 
 .blog-posts {
   flex-wrap: wrap;
@@ -102,15 +106,12 @@
 
 // Article content
 
-.blog-article {
-  max-width: 640px;
+.rich-text {
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.post-body {
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.125em;
+  line-height: 1.6;
   margin-bottom: 3em;
 }
 
@@ -128,7 +129,7 @@
 
 // RESPONSIVE STYLES
 
-@media screen and (max-width: 720px) {
+@include mobile {
 
   .hero-section {
     flex-direction: column;

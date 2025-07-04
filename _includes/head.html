@@ -35,15 +35,31 @@
     <!-- Social Media Meta Tags -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{% t global.title %}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{% t global.description %}{% endif %}">
-  <meta property="og:image" content="{{ page.og_image | default: 'og.png' | prepend: site.baseurl_root }}">
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | prepend: site.baseurl_root }}">
+  {% elsif site.lang == 'pl' %}
+    <meta property="og:image" content="{{ '/assets/images/og-pl.png' | prepend: site.baseurl_root }}">
+  {% elsif site.lang == 'ru' %}
+    <meta property="og:image" content="{{ '/assets/images/og-ru.png' | prepend: site.baseurl_root }}">
+  {% else %}
+    <meta property="og:image" content="{{ '/assets/images/og.png' | prepend: site.baseurl_root }}">
+  {% endif %}
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{% t global.title %}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{% t global.description %}{% endif %}">
-  <meta name="twitter:image" content="{{ page.og_image | default: 'og.png' | prepend: site.baseurl_root }}">
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | prepend: site.baseurl_root }}">
+  {% elsif site.lang == 'pl' %}
+    <meta name="twitter:image" content="{{ '/assets/images/og-pl.png' | prepend: site.baseurl_root }}">
+  {% elsif site.lang == 'ru' %}
+    <meta name="twitter:image" content="{{ '/assets/images/og-ru.png' | prepend: site.baseurl_root }}">
+  {% else %}
+    <meta name="twitter:image" content="{{ '/assets/images/og.png' | prepend: site.baseurl_root }}">
+  {% endif %}
 
-    <!-- Additional SEO Meta Tags -->
+  <!-- Additional SEO Meta Tags -->
   <meta name="author" content="{{ site.title }}">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
@@ -56,7 +72,7 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "{{ site.title }}",
-      "description": "{% if page.description %} {{ page.description }}{% else %}{% t global.description %}{% endif %}",
+      "description": "{% if page.description %} {{ page.description }} {% else %}{% t global.description %}{% endif %}",
       "url": "{{ site.url }}",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "iOS, Android",

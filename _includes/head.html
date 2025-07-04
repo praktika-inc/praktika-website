@@ -1,9 +1,8 @@
 <head>
-    <!-- Essential Meta Tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Title & Description -->
   <title>
     {% if page.title %}
       {{ page.title }} | {{ site.title }}
@@ -50,11 +49,6 @@
   {% endif %}
   <meta name="facebook-domain-verification" content="zbwt0nirjlwa92qj7hoichr0gkqxsh">
 
-  <!-- Webflow Touch Detection -->
-  <script>
-    !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);
-  </script>
-
   <!-- Analytics & Tracking -->
   {% if site.google_analytics_4 %}
     <!-- Google Analytics 4 -->
@@ -82,25 +76,5 @@
           fbq('track', 'PageView');
     </script>
   {% endif %}
-
-  <!-- UTM Redirect Logic -->
-  <script>
-    var queryString = window.location.search;
-    var urlParams = new URLSearchParams(queryString);
-    var utm_source = urlParams.get('utm_source') || '';
-    var campName = urlParams.get('utm_medium') || '';
-    var adsetName = urlParams.get('utm_campaign') || '';
-    var adName = urlParams.get('utm_content') || '';
-    var campId = urlParams.get('campaign') || '';
-    var adsetId = urlParams.get('adgroup') || '';
-    var adId = urlParams.get('creative') || '';
-    if (utm_source == 'FBAds' && campName) {
-      var adjRedirect = 'https://app.adjust.com/dl2uqni?';
-      adjRedirect += 'campaign=' + encodeURIComponent(campName) + '%20%28' + encodeURIComponent(campId) + '%29';
-      adjRedirect += '&adgroup=' + encodeURIComponent(adsetName) + '%20%28' + encodeURIComponent(adsetId) + '%29';
-      adjRedirect += '&creative=' + encodeURIComponent(adName) + '%20%28' + encodeURIComponent(adId) + '%29';
-      window.location = adjRedirect;
-    }
-  </script>
 
 </head>

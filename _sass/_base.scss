@@ -1,14 +1,14 @@
 // Brand Colors
+
 $blue-color: #008eaf;
 $white-color: #fff;
 $black-color: #333;
 $grey-color: #9b9b9b;
 $light-color: #eee;
-
-// Brand Gradients
 $turquois-gradient: linear-gradient(#34afd0, #4adeba);
 
 // Responsive Breakpoints
+
 $mobile-max: 720px;
 
 @mixin mobile { @media screen and (max-width: #{$mobile-max}) { @content; } }
@@ -20,6 +20,8 @@ $mobile-max: 720px;
   background-image: url($bg-light);
   &:hover { background-image: url($bg-dark); }
 }
+
+// Heading styles
 
 $heading-styles: (
   h1: (font-size: 2em, line-height: 1.2, margin-top: 2em, margin-bottom: 1em),
@@ -54,7 +56,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  padding: 0 20px;
+  padding: 0 1em;
 }
 
 header, nav { display: block; }
@@ -95,11 +97,6 @@ input[type='checkbox'] {
   padding: 0;
 }
 
-// Touch device styles
-html.w-mod-touch * {
-  background-attachment: scroll !important;
-}
-
 // Layout utilities
 
 .content {
@@ -130,34 +127,4 @@ p, ul, ol { margin-bottom: .5em; }
 
 .store-button.google-play {
   @include store-button(144, '/assets/images/gp-button-en-l.svg', '/assets/images/gp-button-en-d.svg');
-}
-
-.store-banner {
-  background: $turquois-gradient;
-  border-radius: 1em;
-  align-items: center;
-  padding: 24px 32px;
-  gap: 1.5em;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  h3 {
-    color: $white-color;
-    font-size: 1.125em;
-    line-height: 1.4;
-    font-weight: 400;
-    margin: 0;
-  }
-}
-
-// Mobile styles
-
-@include mobile {
-
-  .store-banner {
-    flex-direction: column;
-    text-align: center;
-    gap: 1em;
-  }
-
 }

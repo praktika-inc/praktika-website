@@ -53,8 +53,14 @@
 .footer {
   padding: 3em 0;
   text-align: center;
+}
+
+.footer-content {
   flex-direction: column;
   gap: 1em;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-links {
@@ -109,7 +115,7 @@
 
   // Footer mobile styles
 
-  .footer { gap: 2em; }
+  .footer-content { gap: 2em; }
 
   .footer-links {
     flex-direction: column;

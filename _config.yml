@@ -1,9 +1,10 @@
 title: Practico
 email: hi@praktika.app
-description: Meditation & Sleep
+description: Meditation & Sleep
 domain: praktika.app
-baseurl: "/praktika-website"
-url: "https://praktika-inc.github.io"
+baseurl: ""
+url: "https://praktika.app"
+
 # Sass/SCSS settings
 sass:
   sass_dir: _sass

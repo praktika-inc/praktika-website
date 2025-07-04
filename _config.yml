@@ -33,6 +33,7 @@ plugins:
   - jekyll-loading-lazy # https://github.com/gildesmarais/jekyll-loading-lazy 
   - jekyll-multiple-languages-plugin # https://github.com/kurtsson/jekyll-multiple-languages-plugin
   - jekyll-target-blank #https://github.com/keithmifsud/jekyll-target-blank
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
 
 # Pagination configuration
 pagination:

@@ -1,4 +1,6 @@
 global:
+  title: "Practico — Medytacja i Sen"
+  description: "Aplikacja do medytacji w języku polskim. Pomoże poradzić sobie ze stresem, poprawi sen i produktywność. Darmowy kurs i krótkie sesje trwające 10 minut bez ezoteryki."
   logo: logo.svg
   banner-cta: Pobierz darmową aplikację i medytuj z naszym przewodnikiem
 nav:

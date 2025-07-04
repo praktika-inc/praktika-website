@@ -1,4 +1,6 @@
 global:
+  title: "Practico — Meditation & Sleep"
+  description: "A non-esoteric meditation app. Your personal mindfulness guide who's always there. Helps you cope with stress, improve your sleep, and increase productivity."
   logo: logo.svg
   banner-cta: Download the Practico app and meditate with our free guide
 nav:

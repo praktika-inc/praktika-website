@@ -11,6 +11,10 @@ nav:
   blog: Blog
   license: Umowa
   privacy: Prywatność
+cookies:
+  banner_text: "Ta strona używa plików cookie do analityki, jak opisano w"
+  privacy_policy: "polityce prywatności"
+  accept_button: "Akceptuj"
 hero:
   h1: Apka do medytacji<br>bez mistycyzmu i ezoteriki
   i1: Bezpłatny 10-dniowy kurs medytacji

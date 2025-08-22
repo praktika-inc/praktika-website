@@ -11,6 +11,10 @@ nav:
   blog: Blog
   license: License Agreement
   privacy: Privacy Policy
+cookies:
+  banner_text: "This website uses third-party cookies for analytics as described in the"
+  privacy_policy: "Privacy Policy"
+  accept_button: "Accept"
 hero:
   h1: Your Personal<br>Meditation Guide
   i1: Dozens of meditations for every occasion

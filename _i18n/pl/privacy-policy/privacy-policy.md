@@ -6,7 +6,7 @@ Praktika is a meditation app. Managed by PRAKTIKA, INC. (EIN 87-3267429).
 ‍
 You can contact the dedicated person responsible for protecting personal data at "Praktika" by sending an email to this address: hi@praktika.app.
 
-This Privacy Policy applies to all types of customer information that we collect through the mobile app.
+This Privacy Policy applies to all types of customer information that we collect through the mobile app and our website.
 
 Important clarification: if you do not agree with this Privacy Policy, we ask you to refrain from using our services.
 
@@ -99,6 +99,40 @@ In addition to "Praktika" taking technical measures to protect your personal dat
 
 To ensure that our service operates smoothly, we use a network of servers, including those outside the EU and the US. We ensure adequate data protection and observation of applicable legal frameworks, both those adopted by the EU and the countries where the privacy software and hardware are located, and implementation of strong contractual standards. If you would like to learn more about our protection measures, please contact us at hi@praktika.app.
 
+## Website Cookies and Analytics
+
+### What Are Cookies?
+Cookies are small text files that are stored on your device when you visit our website. They help us understand how you interact with our website and improve your browsing experience.
+
+### Third-Party Analytics Services
+Our website uses third-party analytics services to help us understand how visitors use our site and improve our services:
+
+**Google Analytics 4** - We use Google Analytics to collect information about website usage, including pages visited, time spent on pages, and user interactions. This service uses cookies to track your activity across our website. Google Analytics helps us understand our audience and improve our website performance. We have implemented Google Consent Mode v2, which means analytics data collection respects your cookie preferences and operates in a privacy-focused manner when consent is not given.
+
+**Facebook Pixel** - We use Facebook Pixel to measure the effectiveness of our marketing campaigns and understand how users interact with our website after clicking on our advertisements. This service uses cookies to track conversions and optimize our advertising efforts.
+
+### Cookie Consent and Your Choices
+When you first visit our website, you will see a cookie consent banner. You have the following options:
+
+- **Accept Cookies**: By clicking "Accept," you consent to the use of all cookies described in this policy
+- **Do Not Track**: If you have enabled "Do Not Track" in your browser settings, we will respect this preference and will not track your activity regardless of your cookie consent choice
+- **Withdraw Consent**: You can withdraw your consent at any time by clearing your browser cookies or contacting us at hi@praktika.app
+
+### Data Retention for Website Analytics
+- **Google Analytics**: Data is retained according to Google's data retention policies, typically 26 months for user and event data
+- **Facebook Pixel**: Data is retained according to Facebook's data retention policies
+- **Consent Records**: Your cookie consent choice is stored in your browser for 31 days
+
+### Managing Cookies
+You can control and manage cookies in several ways:
+- **Browser Settings**: Most browsers allow you to view, delete, and block cookies through their settings
+- **Opt-Out Tools**: You can opt out of Google Analytics tracking by using Google's opt-out browser add-on
+- **Do Not Track**: Enable "Do Not Track" in your browser to prevent all tracking
+
+For more information about how these third-party services handle your data, please review their privacy policies:
+- Google Analytics Privacy Policy: https://policies.google.com/privacy
+- Facebook Data Policy: https://www.facebook.com/privacy/policy
+
 ## Links to Third-Party Sites
 
 Our service may contain links to third-party sites and services that we do not control. We are not responsible for the security or privacy of any information collected by third-party sites or services. Please, be cautious when filling out feedback forms on third-party sites.
@@ -107,4 +141,4 @@ Our service may contain links to third-party sites and services that we do not c
 
 Praktika reserves the right to revise this policy at some point to reflect its current data processing practices. We may update the Policy as needed. We recommend reviewing the relevance of this Policy on a regular basis. By continuing to use our service after the Policy change, you agree to the changes made.
 
-Last modified date of the Privacy Policy: March 10, 2022.
+Last modified date of the Privacy Policy: August 22, 2025.

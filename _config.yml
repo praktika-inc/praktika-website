@@ -63,6 +63,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - script/
+  - CLAUDE.md
 
 # SEO and social
 social:
@@ -76,9 +77,6 @@ google_analytics_4: G-FS0M8R7KHB
 # Facebook settings
 facebook_app_id: 1260724791513802
 facebook_pixel_id: 386000906841885
-
-# Yandex Metrika
-yandex_metrika: 53745279
 
 # App Store
 app_store_id: 1467786415

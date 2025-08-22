@@ -136,31 +136,36 @@
   <meta name="msapplication-TileColor" content="#2196F3">
   <meta name="msapplication-config" content="none">
 
-  <!-- Analytics & Tracking -->
-  {% if site.google_analytics_4 %}
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_4 }}"></script>
+  <!-- Google Analytics with Consent Mode v2 (Advanced) -->
+  {%- if site.google_analytics_4 -%}
     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '{{ site.google_analytics_4 }}');
+      {%- include ga-consent.js -%}
     </script>
-  {% endif %}
+  {%- endif -%}
 
   {% if site.facebook_pixel_id %}
-    <!-- Facebook Pixel -->
+    <!-- Facebook Pixel with Consent Respect -->
     <script>
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '{{ site.facebook_pixel_id }}');
+      // Load Facebook Pixel script
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Initialize Facebook Pixel (but don't track yet)
+      fbq('init', '{{ site.facebook_pixel_id }}');
+      
+      // Function to handle Facebook tracking with consent
+      window.initFacebookTracking = function() {
+        if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
           fbq('track', 'PageView');
+          console.log('Facebook Pixel PageView tracked (consent given)');
+        }
+      };
     </script>
   {% endif %}
 

@@ -64,6 +64,7 @@ exclude:
   - vendor/ruby/
   - script/
   - CLAUDE.md
+  - WARP.md
 
 # SEO and social
 social:
